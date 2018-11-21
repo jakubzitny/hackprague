@@ -14,7 +14,7 @@ chai.use(chaiJestSnapshot)
 
 
 describe('Menu', () => {
-  it('renders correctly', () => {
+  it.skip('renders correctly', () => {
     const wrapper = mount(<Menu />)
 
     expect(wrapper).to.matchSnapshot()

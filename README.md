@@ -1,4 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# HackPrague website boilerplate from Create React App
+[![Build Status](https://travis-ci.org/jakubzitny/hackprague.svg?branch=master)](https://travis-ci.org/jakubzitny/hackprague)
 
 ## Available Scripts
 
