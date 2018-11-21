@@ -25,7 +25,7 @@ describe('App', () => {
   it('renders shallowly with correct text', () => {
     const wrapper = shallow(<App />)
 
-    console.log(wrapper.debug())
+    // console.log(wrapper.debug())
 
     expect(wrapper).to.have.descendants('Header')
   })
@@ -34,7 +34,7 @@ describe('App', () => {
   it('renders correct text', () => {
     const wrapper = mount(<App />)
 
-    console.log(wrapper.debug())
+    // console.log(wrapper.debug())
 
     expect(wrapper).to.contain.text('Ahoj, webdev!')
   })
@@ -43,7 +43,7 @@ describe('App', () => {
   it.skip('renders fully correctly', () => {
     const wrapper = mount(<App />)
 
-    console.log(wrapper.debug())
+    // console.log(wrapper.debug())
 
     expect(wrapper).to.matchSnapshot()
   })
