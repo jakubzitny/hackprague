@@ -6,8 +6,6 @@ cache:
   npm: true
   directories:
     - ~/.cache
-install:
-  - npm ci
 script:
   - yarn test
   - yarn test:ui:ci
