@@ -12,6 +12,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "test:ui": "npx cypress open",
+    "test:ui:ci": "./node_modules/.bin/cypress run --record --key 968cf409-e742-41ba-9feb-038e6e3f123f",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
