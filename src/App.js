@@ -7,10 +7,8 @@ import Speakers from './Speakers'
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="App" id="#id">
         <Header />
-        <Menu />
-        {/* <Speakers /> */}
       </div>
     );
   }

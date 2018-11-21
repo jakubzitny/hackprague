@@ -15,26 +15,27 @@ chai.use(chaiJestSnapshot)
 
 
 describe('App', () => {
-  it('renders without crashing with ReactDOM', () => {
-    const div = document.createElement('div');
-    ReactDOM.render(<App />, div);
-    ReactDOM.unmountComponentAtNode(div);
-  });
-
-
-  it('renders shallowly with correct text', () => {
+  it('renders shallowly with Header', () => {
     const wrapper = shallow(<App />)
 
     // console.log(wrapper.debug())
-
+    //
     expect(wrapper).to.have.descendants('Header')
+  })
+
+
+  it.only('should render correctly', () => {
+    const wrapper = mount(<App />)
+
+    console.log(wrapper.debug())
+    expect(wrapper).to.matchSnapshot()
   })
 
 
   it('renders correct text', () => {
     const wrapper = mount(<App />)
 
-    // console.log(wrapper.debug())
+    console.log(wrapper.debug())
 
     expect(wrapper).to.contain.text('Ahoj, webdev!')
   })
