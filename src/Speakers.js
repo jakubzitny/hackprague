@@ -12,7 +12,7 @@ export default class Speakers extends Component {
 
   _renderSpeaker(speaker, i) {
     return (
-      <div id={i}>
+      <div key={i}>
         <div>Name: {speaker.name}</div>
         <img src={speaker.thumb} alt={speaker.name} />
       </div>
