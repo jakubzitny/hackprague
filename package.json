@@ -12,7 +12,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "test:ui": "npx cypress open",
-    "test:ui:ci": "./node_modules/.bin/cypress run --record --key 968cf409-e742-41ba-9feb-038e6e3f123f",
+    "test:ui:run": "./node_modules/.bin/cypress run --record --key 968cf409-e742-41ba-9feb-038e6e3f123f",
+    "test:ui:ci": "start-server-and-test start http://localhost:3000 test:ui:run",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -34,6 +35,7 @@
     "cypress": "^3.1.2",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
-    "immutable": "^4.0.0-rc.12"
+    "immutable": "^4.0.0-rc.12",
+    "start-server-and-test": "^1.7.11"
   }
 }

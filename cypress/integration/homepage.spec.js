@@ -7,8 +7,6 @@ describe('Hackprague homepage', () => {
   it('loads homepage', () => {
     cy.visit('http://localhost:3000')
 
-    cy.get('a.App-menu-item').contains('Home')
-    cy.get('a.App-menu-item').contains('About')
-    cy.get('a.App-menu-item').contains('Contact')
+    cy.get('.App-header').contains('Ahoj, webdev!')
   })
 })
