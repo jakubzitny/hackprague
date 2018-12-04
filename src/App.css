@@ -1,21 +1,29 @@
+:root {
+  --main-color: #2045ec;
+  --main-color-2: #f5ff00;
+}
+
 .App {
   text-align: center;
+
+  /* to right,
+  #2045ec, #2045ec 50%,
+  #4865e6 50%,#4865e6), */
+
+  /* background-size: 16px 16px, 16px 16px;
+  background-image:
+    linear-gradient(to bottom, transparent 50%, #2045ec 50%),
+    linear-gradient(to right, #4865e6 50%, #2045ec 50%);
+  background-repeat: repeat; */
+}
+
+h1, h2, h3, p {
+  font-family: "Futura";
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 20vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-menu-item {

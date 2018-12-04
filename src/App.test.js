@@ -16,11 +16,13 @@ chai.use(chaiJestSnapshot)
 
 describe('App', () => {
   it('renders shallowly with Header', () => {
-    const wrapper = shallow(<App />)
+    const wrapper = mount(<App />)
 
     // console.log(wrapper.debug())
-    //
-    expect(wrapper).to.have.descendants('Header')
+
+    expect(wrapper).to.have.descendants(Header)
+    expect(wrapper).to.have.descendants(MenuItem)
+    expect(wrapper.find(MenuItem)).to.have.length(5)
   })
 
 
