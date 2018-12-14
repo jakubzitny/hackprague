@@ -1,4 +1,6 @@
 
+// https://docs.cypress.io/guides/guides/continuous-integration.html
+
 describe('Hackprague homepage', () => {
   it('Does not do much!', () => {
     expect(true).to.equal(true)
@@ -14,7 +16,7 @@ describe('Hackprague homepage', () => {
 
 
 
-describe.skip('Avocode homepage', () => {
+describe('Avocode homepage', () => {
   it('loads homepage', () => {
     cy.visit('/')
 
@@ -36,7 +38,28 @@ describe.skip('Avocode homepage', () => {
       .should('have.value', 'jakubzitny@avocode.com')
 
     cy
+      .get('form input#organization')
+      .type('avo')
+      .should('have.value', 'avo')
+
+    cy
+      .get('form textarea')
+      .type('test')
+      .should('have.value', 'test')
+
+    cy
+      .get('form select[name="inquiry"]')
+      .select('I need help')
+
+    cy
       .get('form select[name="companySize"]')
       .select('50-199')
+
+
+    cy.get('button[data-test="contactUs_submit"]').click()
+
+
+
+
   })
 })
