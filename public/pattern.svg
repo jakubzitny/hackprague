@@ -1,8 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 160">
-  <g fill="#2045ec" fill-rule="nonzero">
-    <path d="M64-6v44l64 64V58z"/>
-    <path d="M65-5v44l64 64V59zM32 50v44l64 64v-44z"/>
-    <path d="M31 49v44l64 64v-44z" opacity=".367"/>
-    <path d="M96 122H64v64h32zM32-6H0v192h32zM96-6H64v32h32z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 96 160">
+  <g fill="#2045ED" fill-rule="nonzero">
+    <path d="M32 50v44l64 64v-44z"/>
+    <path d="M96 122H64v64h32zM32-6H0v192h32z"/>
   </g>
 </svg>

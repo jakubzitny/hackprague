@@ -41,8 +41,8 @@ export default class Head extends Component {
           <Title>Hack</Title>
           <Title>Prague</Title>
           <Title>2019</Title>
-          <Title>23-24</Title>
-          <Title>June</Title>
+          <Title>4 – 5</Title>
+          <Title>May</Title>
         </TitleWrapper>
       </HeadWrapper>
     )

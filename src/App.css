@@ -1,6 +1,8 @@
 :root {
   --main-color: #2045ec;
   --main-color-2: #f5ff00;
+
+  --block-size: 32px;
 }
 
 .App {
@@ -33,6 +35,43 @@ h1, h2, h3, p {
 .App-link {
   color: #61dafb;
 }
+
+.title {
+  color: var(--main-color);
+
+  font-family: Futura;
+  line-height: 32px;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.item {
+  margin-bottom: 32px;
+  padding-left: 32px;
+
+  border-left: 32px solid var(--main-color);
+}
+
+
+.blue-overlay::before {
+  content: '';
+  z-index: 100;
+  position: absolute;
+  background-color: var(--main-color);
+  opacity: 0.3;
+}
+
+a.underlined {
+  color: var(--main-color);
+  text-decoration: underline;
+}
+
+a.underlined:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 @keyframes App-logo-spin {
   from {

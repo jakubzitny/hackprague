@@ -5,8 +5,11 @@ import classNames from 'classnames'
 
 const NavWrapper = styled.div`
   position: fixed;
+  height: 320px;
   right: 20px;
   top: 20%;
+
+  background: var(--main-color);
 
   display: flex;
   flex-direction: column;

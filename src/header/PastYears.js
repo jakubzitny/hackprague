@@ -3,21 +3,20 @@ import styled from 'styled-components'
 
 
 const PastYearsWrapper = styled.div`
+  width: 225px;
   display: flex;
   padding: 30px 0;
-  justify-content: center;
   background-color: var(--main-color);
   color: white;
 
   & h3 {
-    margin: 5px;
-    font-size: 1.17em;
+    margin: 0;
+    font-size: 20px;
   }
 `
 
 const PastYear = styled.a`
-  font-size: 1.17em;
-  margin: 5px;
+  font-size: 21px;
   font-family: "Futura";
   font-weight: bold;
   text-decoration: none;

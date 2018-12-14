@@ -2,8 +2,11 @@ import React, { Component } from 'react';
 
 import Nav from './Nav'
 import Header from './header/Header'
-import PastYears from './header/PastYears'
 import Countdown from './countdown/Countdown'
+import Venue from './venue/Venue'
+import Speakers from './speakers/Speakers'
+import Prizes from './prizes/Prizes'
+import Faq from './faq/Faq'
 import Sponsors from './sponsors/Sponsors'
 import Footer from './footer/Footer'
 
@@ -14,15 +17,14 @@ class App extends Component {
     return (
       <div className="App">
         <Nav />
-        <PastYears />
         <Header />
         <Countdown />
-        {/* <Prizes /> */}
-        {/* <Venue /> */}
-        {/* <Speakers /> */}
-        {/* <Faq /> */}
+        <Prizes />
+        <Venue />
+        <Speakers />
+        <Faq />
         <Sponsors />
-        {/* <Team /> */}
+        <Speakers selector="team" />
         <Footer />
       </div>
     );
@@ -30,3 +32,5 @@ class App extends Component {
 }
 
 export default App;
+
+
