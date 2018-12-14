@@ -1,6 +1,7 @@
 {
   "name": "hackprague",
   "version": "0.1.0",
+  "homepage": "http://jakubzitny.github.io/hackprague",
   "private": true,
   "dependencies": {
     "classnames": "^2.2.6",
@@ -16,7 +17,9 @@
     "test:ui": "npx cypress open",
     "test:ui:run": "./node_modules/.bin/cypress run --record --key 968cf409-e742-41ba-9feb-038e6e3f123f",
     "test:ui:ci": "start-server-and-test start http://localhost:3000 test:ui:run",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app",
@@ -37,6 +40,7 @@
     "cypress": "^3.1.2",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
+    "gh-pages": "^2.0.1",
     "immutable": "^4.0.0-rc.12",
     "start-server-and-test": "^1.7.11"
   }
