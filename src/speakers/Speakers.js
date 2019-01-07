@@ -33,6 +33,7 @@ const SpeakersRight = styled.div`
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  margin-top: 40px;
 `
 
 

@@ -14,7 +14,9 @@ const Venue1 = styled.div`
   width: 540px;
   height: 360px;
 
-  background: url('venue2.png');
+  background-image: url('venue2.png');
+  background-color: rgba(32, 69, 156, 0.9);
+  background-blend-mode: screen;
 
   margin-bottom: 64px;
 
@@ -28,7 +30,10 @@ const Venue2 = styled.div`
   width: 540px;
   height: 360px;
 
-  background: url('venue.png');
+  background-image: url('venue.png');
+  background-color: rgba(32, 69, 156, 0.9);
+  background-blend-mode: screen;
+
   margin: 64px 0;
 
   &::before {
@@ -111,7 +116,7 @@ const Pattern3 = styled.div`
 `
 
 const Pattern4 = styled.div`
-  height: 80px;
+  height: 77px;
   width: 96px;
 
   border-left: 32px solid var(--main-color);
@@ -137,7 +142,7 @@ export default class Venue extends Component {
       <WrappedContainer wider>
         <VenueLeft>
           <AnimSpacer />
-          <Venue1 className="blue-overlay" />
+          <Venue1 />
           <VenueTextSpacer>
             <VenueText className="item">
               <p>
@@ -162,11 +167,11 @@ export default class Venue extends Component {
             <VenueText className="item">
               <h3>C enter for A rchitecture <br />and M etropolitan P lanning</h3>
               <p>Vyšehradská 51, Praha 2 <br /> Emmaus monastery</p>
-              <a href={this._getLocationHref()} className="underlined">see location</a>
+              <a href={this._getLocationHref()} target="_blank" rel="noopener noreferrer" className="underlined">see location</a>
               <p>Metro: B, station: Karlovo náměstí <br /> Tram station: Moráň or Palackého náměstí</p>
             </VenueText>
           </VenueTextSpacer>
-          <Venue2 className="blue-overlay" />
+          <Venue2 />
         </VenueRight>
       </WrappedContainer>
     )

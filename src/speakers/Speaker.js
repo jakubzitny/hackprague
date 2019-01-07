@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 const SpeakerWrapper = styled.div`
-  margin: 0 0 95px 64px;
+  margin: 0 0 97px 64px;
 `
 
 // TODO
@@ -11,10 +11,12 @@ const SpeakerName = styled.div`
   width: 300px;
 
   margin: 0 0 -100px -50px;
-  /* color: var(--main-color-2);
-  text-shadow: 2px 2px var(--main-color); */
-  color: var(--main-color);
-  text-shadow: 2px 2px 5px var(--main-color-2);
+  color: #4A4A4A;
+
+  /* text-shadow: 2px 2px var(--main-color); */
+  /* color: var(--main-color); */
+  /* text-shadow: 0px 0px 1px var(--main-color-2); */
+
   font-family: Futura;
   font-size: 36px;
   font-weight: 700;
@@ -37,18 +39,15 @@ export default class Speaker extends Component {
       width: 412px;
       height: 412px;
 
-      background: url(${`${this.props.selector}/${photo}`});
-
-      &::before {
-        width: 412px;
-        height: 412px;
-      }
+      background-image: url(${`${this.props.selector}/${photo}`});
+      background-color: rgba(32, 69, 156, 0.9);
+      background-blend-mode: screen;
     `
 
     return (
       <SpeakerWrapper>
         <SpeakerName>{ name }</SpeakerName>
-        <SpeakerPhoto className="blue-overlay" />
+        <SpeakerPhoto  />
         <SpeakerText>{ desc }</SpeakerText>
       </SpeakerWrapper>
     )

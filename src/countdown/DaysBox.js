@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 
+import Logo from '../Logo'
 
 const DaysBoxWrapper = styled.div`
   height: 256px;
@@ -10,18 +11,26 @@ const DaysBoxWrapper = styled.div`
   flex-direction: row;
 
   margin-top: 32px;
-  margin-left: -92px;
+  margin-left: -104px;
 `
 
 const Left = styled.div`
   height: 100%;
-  width: 160px;
-  background-color: var(--main-color);
+
+  width: 128px;
+
+  /* background-color: var(--main-color);
+
+  background: url('logo.svg'); */
+
+  margin-top: -4px;
+
+  --logo-color: var(--main-color);
 `
 
 const Right = styled.div`
   height: 100%;
-  width: 216px;
+  width: 248px;
 
   display: flex;
   flex-direction: column;
@@ -40,6 +49,7 @@ const Number = styled.h3`
 
   font-size: 49px;
   font-weight: 700;
+  text-align: center;
 `
 
 const Text = styled.p`
@@ -65,7 +75,9 @@ export default class DaysBox extends Component {
   render() {
     return (
       <DaysBoxWrapper>
-        <Left />
+        <Left>
+          <Logo />
+        </Left>
         <Right>
           <Number>{this._getDaysToHackPrague()}</Number>
           <Text>days to <br />HackPrague</Text>

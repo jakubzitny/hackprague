@@ -2,23 +2,25 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 import DaysBox from './DaysBox'
-
+import WrappedContainer from '../WrappedContainer'
 
 const CountdownWrapper = styled.div`
-  height: 800px;
+  height: 847px;
   width: 100%;
 
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  background-color: white;
+  margin-left: -252px;
+
+  /* background-color: white;
   background-size: 16px 16px, 16px 16px;
   background-image:
     linear-gradient(to bottom, transparent 50%, #fff 50%),
     linear-gradient(to right, #e9edfe 50%, #fff 50%);
   background-repeat: repeat;
-  background-position: 5px 5px;
+  background-position: 5px 5px; */
 `
 
 const AnimStart = styled.div`
@@ -51,7 +53,7 @@ const AnimStartPart2 = styled.div`
 
 const AnimStartPart3 = styled.div`
   height: 160px;
-  width: 610px;
+  width: 289px;
 `
 
 const AnimStartPart4 = styled.div`
@@ -72,7 +74,7 @@ const TitleWrapper = styled.div`
 `
 
 const TitleAnim = styled.div`
-  width: 800px;
+  width: 513px;
 
   display: flex;
   flex-direction: row;
@@ -100,7 +102,7 @@ const TitleText = styled.div`
 
   &.countdown {
     margin-left: 0;
-    width: 376px;
+    width: 345px;
   }
 
   &.and {
@@ -120,13 +122,13 @@ const Square = styled.div`
 
 const DataWrapper = styled.div`
   width: 100%;
-  height: 350px;
+  height: 288px;
   display: flex;
   flex-direction: row;
 `
 
 const DataAnim = styled.div`
-  width: 906px;
+  width: 585px;
   height: 100%;
 
   display: flex;
@@ -141,10 +143,60 @@ const DataAnimPart1 = styled.div`
 `
 
 const DataAnimPart2 = styled.div`
-  width: 610px;
+  width: 289px;
   height: 100%;
 
+  display: flex;
+  flex-direction: column;
+
+  /* border-right: var(--block-size) solid var(--main-color); */
+`
+
+const BorderDiv = styled.div`
+  width: 100%;
+  height: var(--block-size);
   border-right: var(--block-size) solid var(--main-color);
+`
+
+const DataAnimPart22 = styled.div`
+  display: flex;
+
+  flex-direction: row;
+  align-items: flex-end;
+`
+
+const DataAnimPart23 = styled.div`
+  width: 128px;
+  height: 50px;
+  margin: 0 32px;
+  border-left: 32px solid var(--main-color);
+  border-right: 32px solid var(--main-color);
+`
+
+const Pattern1 = styled.div`
+  width: 96px;
+  height: 160px;
+
+  background-image: url('pattern.svg');
+  background-repeat: no-repeat;
+  background-position-x: -32px;
+`
+
+const Spacer = styled.div`
+  width: 64px;
+`
+
+const Pattern2 = styled.div`
+  width: 96px;
+  height: 160px;
+
+  transform: rotateY(180deg);
+
+  background-image: url('pattern.svg');
+  background-position-x: -32px;
+  background-repeat: no-repeat;
+
+  margin: 46px 32px 0 0;
 `
 
 const DataTodos = styled.div`
@@ -156,15 +208,15 @@ const DataTodos = styled.div`
   }
 `
 
-const Checkmark = styled.div`
-  display: inline-block;
-  width: 40px;
-  height: 32px;
+// const Checkmark = styled.div`
+//   display: inline-block;
+//   width: 40px;
+//   height: 32px;
 
-  margin: 32px 28px !important;
-  vertical-align: top;
-  background: url('checkmark.svg');
-`
+//   margin: 32px 28px !important;
+//   vertical-align: top;
+//   background: url('checkmark.svg');
+// `
 
 const DataDates = styled.div`
   display: flex;
@@ -201,64 +253,92 @@ const ApplyButton = styled.button`
     opacity: 0.8;
   }
 
+  display: none;
+
+`
+
+const TransitionWrapper = styled.div`
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+`
+
+const TransitionAnim = styled.div`
+  width: 576px;
+  height: 800px;
+  background-image: url('anim-pattern.svg');
+  background-repeat: no-repeat;
+  background-position: 32px -499px;
 `
 
 export default class Countdown extends Component {
-  _handleApplyClick = () => {
-    console.warn('TODO: apply')
-  }
-
   render() {
     return (
-      <CountdownWrapper id="timeline">
-        <AnimStart>
-          <AnimStartPart1 />
-          <AnimStartPart2 />
-          <AnimStartPart3 />
-          <AnimStartPart4 />
-        </AnimStart>
-        <TitleWrapper>
-          <TitleAnim>
-            <TitleAnimPart1 />
-          </TitleAnim>
-          <TitleText className="countdown">
+      <WrappedContainer wider>
+        <CountdownWrapper id="timeline">
+          <AnimStart>
+            <AnimStartPart1 />
+            <AnimStartPart2 />
+            <AnimStartPart3 />
+            <AnimStartPart4 />
+          </AnimStart>
+          <TitleWrapper>
+            <TitleAnim>
+              <TitleAnimPart1 />
+            </TitleAnim>
+            <TitleText className="countdown">
+              <Square />
+              Countdown
+            </TitleText>
+            <TitleText className="and">&</TitleText>
+            <TitleText>Timeline</TitleText>
+          </TitleWrapper>
+
+
+        <DataWrapper>
+          <DataAnim>
+            <DataAnimPart1 />
+            <DataAnimPart2>
+              <BorderDiv />
+              <DataAnimPart22>
+                <Pattern1 />
+                <Spacer />
+                <Pattern2 />
+              </DataAnimPart22>
+              <DataAnimPart23 />
+            </DataAnimPart2>
+          </DataAnim>
+          <DaysBox />
+          <DataTodos>
+            {/* <Checkmark /> */}
             <Square />
-            Countdown
-          </TitleText>
-          <TitleText className="and">&</TitleText>
-          <TitleText>Timeline</TitleText>
-        </TitleWrapper>
+            <Square />
+            <Square />
+          </DataTodos>
+          <DataDates>
+            <Datum>
+              12/04/2019 <br />
+              Application deadline <br />
+              <ApplyButton onClick={this.props.onApplyClick}>Apply</ApplyButton>
+            </Datum>
+            <Datum>
+              14/04/2019 <br />
+              Participants selected
+            </Datum>
+            <Datum>
+              04/05/2019 <br />
+              HackPrague
+            </Datum>
+          </DataDates>
+        </DataWrapper>
 
+        <TransitionWrapper>
+          <TransitionAnim />
+        </TransitionWrapper>
 
-      <DataWrapper>
-        <DataAnim>
-          <DataAnimPart1 />
-          <DataAnimPart2 />
-        </DataAnim>
-        <DaysBox />
-        <DataTodos>
-          <Checkmark />
-          <Square />
-          <Square />
-        </DataTodos>
-        <DataDates>
-          <Datum>
-            01/04/2019 <br />
-            Application deadline <br />
-            <ApplyButton onClick={this._handleApplyClick}>Apply</ApplyButton>
-          </Datum>
-          <Datum>
-            01/05/2019 <br />
-            Participants selected
-          </Datum>
-          <Datum>
-            04/05/2019 <br />
-            HackPrague
-          </Datum>
-        </DataDates>
-      </DataWrapper>
-
-      </CountdownWrapper>
+        </CountdownWrapper>
+      </WrappedContainer>
     )
   }
 }

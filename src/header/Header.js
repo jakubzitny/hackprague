@@ -71,6 +71,8 @@ const ApplyButton = styled.button`
   &:hover {
     opacity: 0.9;
   }
+
+  display: none;
 `
 
 const HeaderRight = styled.div`
@@ -188,10 +190,6 @@ const Arrow = styled.div`
 `
 
 export default class Header extends Component {
-  _handleApplyClick = () => {
-    console.warn('TODO: apply')
-  }
-
   _handleMoreClick = () => {
     console.warn('TODO: scroll')
   }
@@ -208,7 +206,7 @@ export default class Header extends Component {
               This year we've decided to go with one main challenge: <Strong>"Use available data to improve the quality of life in cities”</Strong>.
             </Perex>
             <ButtonWrapper>
-              <ApplyButton onClick={this._handleApplyClick}>Apply</ApplyButton>
+              <ApplyButton onClick={this.props.onApplyClick}>Apply</ApplyButton>
             </ButtonWrapper>
           </HeaderLeft>
           <HeaderRight>
@@ -235,7 +233,7 @@ export default class Header extends Component {
             <QuoteBar />
           </Quote>
         </Quotes>
-        <MoreWrapper onClick={this._handleMoreClick}>
+        <MoreWrapper onClick={this.props.onMoreClick}>
           <More>Go on, there's more</More>
           <Arrow />
         </MoreWrapper>

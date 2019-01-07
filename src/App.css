@@ -1,11 +1,14 @@
 :root {
-  --main-color: #2045ec;
-  --main-color-2: #f5ff00;
+  --main-color: #20459C;
+  /* --main-color: rgb(32, 69, 156); */
+  --main-color-2: #F5FF00;
 
   --block-size: 32px;
 }
 
 .App {
+  /* autoprefixer: off */
+
   text-align: center;
 
   /* to right,
@@ -54,13 +57,13 @@ h1, h2, h3, p {
 }
 
 
-.blue-overlay::before {
+/* .blue-overlay::before {
   content: '';
   z-index: 100;
   position: absolute;
   background-color: var(--main-color);
   opacity: 0.3;
-}
+} */
 
 a.underlined {
   color: var(--main-color);

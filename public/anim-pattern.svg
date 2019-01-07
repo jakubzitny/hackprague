@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 576 800">
+  <defs>
+    <path id="a" d="M0 0h160v160H0z"/>
+    <path id="c" d="M0 0h160v160H0z"/>
+    <path id="e" d="M0 0h160v160H0z"/>
+    <path id="g" d="M0 0h160v160H0z"/>
+    <path id="i" d="M0 0h160v160H0z"/>
+    <path id="k" d="M0 0h160v160H0z"/>
+    <path id="m" d="M0 0h160v160H0z"/>
+    <path id="o" d="M0 0h160v160H0z"/>
+    <path id="q" d="M0 0h160v160H0z"/>
+    <path id="s" d="M0 0h160v160H0z"/>
+    <path id="u" d="M0 0h160v160H0z"/>
+    <path id="w" d="M0 0h160v160H0z"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <g transform="matrix(1 0 0 -1 448 160)">
+      <mask id="b" fill="#fff">
+        <use xlink:href="#a"/>
+      </mask>
+      <g fill="#20459C" fill-rule="nonzero" mask="url(#b)">
+        <path d="M64 50v44l64 64v-44z"/>
+        <path d="M128 122H96v64h32zM64 10H32v176h32z"/>
+      </g>
+    </g>
+    <g transform="translate(128 160)">
+      <mask id="d" fill="#fff">
+        <use xlink:href="#c"/>
+      </mask>
+      <g fill="#20459C" fill-rule="nonzero" mask="url(#d)">
+        <path d="M0 58v44l64 64v-44z"/>
+        <path d="M64 130H32v64h32z"/>
+        <path d="M64 0H32v192h32z"/>
+      </g>
+    </g>
+    <g transform="translate(448 160)">
+      <mask id="f" fill="#fff">
+        <use xlink:href="#e"/>
+      </mask>
+      <g fill="#20459C" fill-rule="nonzero" mask="url(#f)">
+        <path d="M32 86h32v100H32zM32 22h32v32H32z"/>
+      </g>
+    </g>
+    <g fill="none" transform="translate(128)">
+      <mask id="h" fill="#fff">
+        <use xlink:href="#g"/>
+      </mask>
+      <g fill="#20459C" fill-rule="nonzero" mask="url(#h)">
+        <path d="M32-6h32v192H32z"/>
+      </g>
+    </g>
+    <g transform="rotate(180 64 160)">
+      <mask id="j" fill="#fff">
+        <use xlink:href="#i"/>
+      </mask>
+      <g fill="#20459C" fill-rule="nonzero" mask="url(#j)">
+        <path d="M0 58v44l64 64v-44z"/>
+        <path d="M64 130H32v64h32z"/>
+      </g>
+    </g>
+    <path fill-rule="nonzero" d="M128 320H-32v160h160z"/>
+    <g fill="#20459C" fill-rule="nonzero">
+      <path d="M224 474v44l64 64v-44zM160 498v44l64 64v-44z"/>
+      <path d="M192 530v44l64 64v-44z"/>
+      <path d="M191 529v44l64 64v-44z" opacity=".36676897"/>
+      <path d="M256 602h-32v64h32zM192 474h-32v67h32zM256 474h-32v32h32z"/>
+    </g>
+    <g transform="translate(128 320)">
+      <mask id="l" fill="#fff">
+        <use xlink:href="#k"/>
+      </mask>
+      <g fill="#20459C" fill-rule="nonzero" mask="url(#l)">
+        <path d="M64 50v44l64 64v-44z"/>
+        <path d="M128 122H96v64h32zM64-6H32v192h32z"/>
+      </g>
+    </g>
+    <g transform="rotate(180 64 80)">
+      <mask id="n" fill="#fff">
+        <use xlink:href="#m"/>
+      </mask>
+      <g fill="#20459C" fill-rule="nonzero" mask="url(#n)">
+        <path d="M64 50v44l64 64v-44z"/>
+        <path d="M128 122H96v64h32zM64-6H32v192h32z"/>
+      </g>
+    </g>
+    <path fill-rule="nonzero" d="M128 480H-32v160h160z"/>
+    <g transform="matrix(-1 0 0 1 448 480)">
+      <mask id="p" fill="#fff">
+        <use xlink:href="#o"/>
+      </mask>
+      <g fill="#20459C" fill-rule="nonzero" mask="url(#p)">
+        <path d="M32-6h32v192H32z"/>
+      </g>
+    </g>
+    <g transform="translate(288 480)">
+      <mask id="r" fill="#fff">
+        <use xlink:href="#q"/>
+      </mask>
+      <g fill="#20459C" fill-rule="nonzero" mask="url(#r)">
+        <path d="M0 58v44l64 64v-44z"/>
+        <path d="M64 130H32v64h32z"/>
+      </g>
+    </g>
+    <g transform="rotate(180 144 400)">
+      <mask id="t" fill="#fff">
+        <use xlink:href="#s"/>
+      </mask>
+      <g fill="#20459C" fill-rule="nonzero" mask="url(#t)">
+        <path d="M0 58v44l64 64v-44z"/>
+        <path d="M64 130H32v64h32z"/>
+      </g>
+    </g>
+    <g transform="translate(288 640)">
+      <mask id="v" fill="#fff">
+        <use xlink:href="#u"/>
+      </mask>
+      <g mask="url(#v)">
+        <g transform="matrix(1 0 0 -1 0 160)">
+          <mask id="x" fill="#fff">
+            <use xlink:href="#w"/>
+          </mask>
+          <g fill="#20459C" fill-rule="nonzero" mask="url(#x)">
+            <path d="M64 50v44l64 64v-44z"/>
+            <path d="M128 122H96v64h32zM64-6H32v192h32z"/>
+            <path d="M0 102V58L64-6v44z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

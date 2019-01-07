@@ -1,1 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 272 272"><defs><path id="o0u5a" d="M872 1913h176v24h48v72h-48v32h-16v16h-16v16h-16v16h-16v48h16v16h16v16h16v16H888v-16h16v-16h16v-16h16v-48h-16v-16h-16v-16h-16v-16h-16v-32h-48v-72h48z"/><clipPath id="o0u5b"><use fill="#fff" xlink:href="#o0u5a"/></clipPath></defs><g><g transform="translate(-824 -1913)"><use fill="#fff" fill-opacity="0" stroke="#2045ed" stroke-miterlimit="50" stroke-width="32" clip-path="url(&quot;#o0u5b&quot;)" xlink:href="#o0u5a"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 272 272">
+	<defs>
+		<path id="o0u5a" d="M872 1913h176v24h48v72h-48v32h-16v16h-16v16h-16v16h-16v48h16v16h16v16h16v16H888v-16h16v-16h16v-16h16v-48h-16v-16h-16v-16h-16v-16h-16v-32h-48v-72h48z" />
+		<clipPath id="o0u5b">
+			<use fill="#fff" xlink:href="#o0u5a" />
+		</clipPath>
+	</defs>
+	<g>
+		<g transform="translate(-824 -1913)">
+			<use fill="#fff" fill-opacity="0" stroke="#20459C" stroke-miterlimit="50" stroke-width="32" clip-path="url(&quot;#o0u5b&quot;)" xlink:href="#o0u5a" />
+		</g>
+	</g>
+</svg>

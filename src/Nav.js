@@ -1,42 +1,44 @@
 import React, { Component } from 'react'
-import { List } from 'immutable'
+import { Link as ScrollLink } from 'react-scroll'
+import classnames from 'classnames'
 import styled from 'styled-components'
-import classNames from 'classnames'
 
 const NavWrapper = styled.div`
   position: fixed;
-  height: 320px;
+  height: 288px;
   right: 20px;
   top: 20%;
+  padding: 20px 0;
 
   background: var(--main-color);
 
   display: flex;
   flex-direction: column;
-`
 
-const MenuItem = styled.a`
-  display: block;
-  margin: 0 62px;
 
-  text-decoration: none;
-  text-transform: lowercase;
-  text-align: right;
-  line-height: 28px;
-  font-family: "Futura";
-  font-size: 18px;
-  font-weight: 700;
-  color: white;
+  & .link {
+    display: block;
+    margin: 0 62px;
 
-  &:visited, &:link {
+    text-decoration: none;
+    text-transform: lowercase;
+    text-align: right;
+    line-height: 32px;
+    font-family: "Futura";
+    font-size: 18px;
+    font-weight: 700;
     color: white;
   }
 
-  &.active {
+  & .link:visited, & .link:link {
+    color: white;
+  }
+
+  & .link.active {
     color: var(--main-color-2);
-    font-size: 36px;
+    /* font-size: 36px; */
     /* line-height: 52px; */
-    margin: 20px 0;
+    margin: 0px 0;
 
     &::after {
       content: '';
@@ -49,7 +51,7 @@ const MenuItem = styled.a`
     }
   }
 
-  &:hover {
+  & .link:hover {
     color: var(--main-color-2);
     opacity: 0.9;
     cursor: pointer;
@@ -58,30 +60,39 @@ const MenuItem = styled.a`
 
 export default class Nav extends Component {
   state = {
-    active: 'Home',
+    active: this.props.activeMenuItem,
   }
 
   _isActive(item) {
     return item === this.state.active
   }
 
-  render() {
-    const menuItems = List.of(
-      'Home',
-      'Timeline',
-      'Prizes',
-      'Venue',
-      'Speakers',
-      'FAQ',
-      'Sponsors',
-      'Team',
-      'Contact'
-    )
+  _handleClick(menuItem) {
+    // this.props.onMenuItemClick(menuItem)
 
+    this.setState({
+      active: menuItem,
+    })
+  }
+
+  render() {
     return (
       <NavWrapper>
-         {menuItems.map((menuItem, i) => (
-          <MenuItem key={`id-${i}`} href={`#${menuItem}`} className={classNames({ 'active': this._isActive(menuItem) })}>{menuItem}</MenuItem>
+         {this.props.menuItems.map((menuItem, i) => (
+          <ScrollLink
+            spy={true}
+            hashSpy={true}
+            duration={500}
+            smooth={true}
+            to={menuItem}
+            key={`id-${i}`}
+            href={`#${menuItem}`}
+            className={classnames({ active: this._isActive(menuItem), link: true }) }
+            onSetActive={this._handleClick.bind(this, menuItem)}
+            // onClick={this._handleClick.bind(this, menuItem)}
+          >
+            {menuItem}
+          </ScrollLink>
         ))}
       </NavWrapper>
     )

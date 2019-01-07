@@ -42,9 +42,9 @@ export default class PastYears extends Component {
       <PastYearsWrapper>
         <PastYear className="active" href="/">2019</PastYear>
         <h3>•</h3>
-        <PastYear href="http://hackprague.com">2018</PastYear>
+        <PastYear href="http://hackprague.com/hackathon2018.html">2018</PastYear>
         <h3>•</h3>
-        <PastYear href="http://hackprague.com/2017.html">2017</PastYear>
+        <PastYear href="http://hackprague.com/hackathon2017.html">2017</PastYear>
       </PastYearsWrapper>
     )
   }

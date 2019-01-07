@@ -35,13 +35,13 @@ const Type = styled.div`
   font-size: 18px;
 `
 
-const PrizeComment = styled.div`
-  width: 243px;
-  font-family: Rockwell;
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 23px;
-`
+// const PrizeComment = styled.div`
+//   width: 243px;
+//   font-family: Rockwell;
+//   font-size: 17px;
+//   font-weight: 400;
+//   line-height: 23px;
+// `
 
 const PrizesRight = styled.div`
   width: 50%;
@@ -91,19 +91,20 @@ export default class Prizes extends Component {
           <PrizeItem className="item">
             <PrizeMore>And more</PrizeMore>
           </PrizeItem>
-          <PrizeComment className="item">
+          {/* <PrizeComment className="item">
             To make things even more interesting, we’ve partnered up with Br41n.io, JetBrains, Bloomberg and Kiwi.com in order to bring you even more exciting rewards.
             <br />
             <a href="#sponsored-prizes" className="underlined" onClick={this._handleSponsoredPrizesClick}>show sponsored prizes</a>
-          </PrizeComment>
+          </PrizeComment> */}
         </PrizesLeft>
         <PrizesRight>
           <PrizesTrophy />
-          <PrizeItem className="item">
+          {/* <PrizeItem className="item">
             <PrizeMore>Get accelerated</PrizeMore>
           </PrizeItem>
           <PrizeComment className="item">
-            Our partner <b>StartupYard</b> will offer <b>up to 5 teams</b> the possibility to receive <b>€30,000</b> investment and the opportunity to be <b>accelerated for 3 months</b> in Sept - Nov 2018.</PrizeComment>
+            Our partner <b>StartupYard</b> will offer <b>up to 5 teams</b> the possibility to receive <b>€30,000</b> investment and the opportunity to be <b>accelerated for 3 months</b> in Sept - Nov 2018.
+          </PrizeComment> */}
         </PrizesRight>
       </WrappedContainer>
     )

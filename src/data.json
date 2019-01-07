@@ -34,21 +34,6 @@
 
   "team": [
     {
-      "name": "Bolek Kerous",
-      "photo": "bolek.png",
-      "desc": "Customer research analyst at Avocode. Attended 500 Startups accelerator in Silicon Valley."
-    },
-    {
-      "name": "Helena Nobile",
-      "photo": "helena.png",
-      "desc": "Event & organization master"
-    },
-    {
-      "name": "Minh Tri Pham",
-      "photo": "minh.png",
-      "desc": "Studied at Yale University\nPrague Native\nProduct manager at Uber\nPreviously worked at Facebook"
-    },
-    {
       "name": "Michal Jirku",
       "photo": "michal.png",
       "desc": "Studied at Czech Technical University and TU Berlin. Presented at conferences in Central Europe and South Korea."
@@ -56,23 +41,41 @@
     {
       "name": "Michaela Mrazkova",
       "photo": "michaela_mrazkova.png",
-      "desc": "Studies Artificial Intelligence at the University of Groningen \n Organized Benelux Conference on Artificial Intelligence"
+      "desc": "Studies Artificial Intelligence at the University of Groningen. \n Organized Benelux Conference on Artificial Intelligence."
     },
     {
       "name": "Jakub Sedlacek",
       "photo": "jakub_sedlacek.png",
-      "desc": "Law student at Charles University \n Technology ethusiast"
+      "desc": "Law student at Charles University. \n Technology ethusiast."
+    },
+    {
+      "name": "Jakub Žitný",
+      "photo": "jakub_zitny.png",
+      "desc": "PhD student at Czech Technical University with focus on machine learning in medical imaging. \n Software Engineer at Avocode."
+    },
+    {
+      "name": "Helena Nobile",
+      "photo": "helena.png",
+      "desc": "Event & organization master."
+    }
+  ],
+
+  "teambckp": [
+    {
+      "name": "Minh Tri Pham",
+      "photo": "minh.png",
+      "desc": "Studied at Yale University\nPrague Native\nProduct manager at Uber\nPreviously worked at Facebook"
     }
   ],
 
   "faq": [
     {
       "q": "What is a hackathon?",
-      "a": "We think of our hackathon as an \"invention marathons\" where participants have no restraints. Unlike other events, we don’t want you to come up with a startup MVP or a solution to a corporate problem. It's whatever you want to build around the four categories mentioned above, just for the sake of building. Unleash your creativity and technical skills!"
+      "a": "We think of our hackathon as an \"invention marathons\" where participants have no restraints. Unlike other events, we don’t want you to come up with a startup MVP or a solution to a corporate problem. It's whatever you want to build on top of any dataset with the aim to improve the quality of life in cities. Unleash your creativity and technical skills!"
     },
     {
       "q": "What are the prizes?",
-      "a": "The main prize is €3500 (33 500 CZK) and the runner-up prize is €750. Additionally, there are many other sponsored prizes as well as the opportunity to get accelerated from our partner StartupYard."
+      "a": "The main prize is €2000 (50 000 CZK), second best team will be awarded with €1200 (30 000 CZK) and the third best team with €400 (10 000 CZK). Additionally, there will be many other sponsored prizes."
     },
     {
       "q": "Why should I come?",
