@@ -11,5 +11,6 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // Learn more about service workers: http://bit.ly/CRA-PWA
 serviceWorker.unregister();
 
-
-window.history.replaceState(window.history.state, document.title, "hackathon2019/")
+if (window.location.pathname === "/") {
+  window.history.replaceState(window.history.state, document.title, "hackathon2019/")
+}
