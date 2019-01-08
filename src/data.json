@@ -1,6 +1,28 @@
 {
   "speakers": [
     {
+      "name": "Speaker",
+      "photo": "nospeaker.png",
+      "desc": "To be announced."
+    },
+    {
+      "name": "Speaker",
+      "photo": "nospeaker.png",
+      "desc": "To be announced."
+    },
+    {
+      "name": "Speaker",
+      "photo": "nospeaker.png",
+      "desc": "To be announced."
+    },
+    {
+      "name": "Speaker",
+      "photo": "nospeaker.png",
+      "desc": "To be announced."
+    }
+  ],
+  "speakers-bckp": [
+    {
       "name": "Tomas Studenik",
       "photo": "studenik.png",
       "desc": "Radical innovator and city hacker. Organizer of smart city hackathons CEE Hacks and Czech FuckUp Nights. Founder of multiple startups."
