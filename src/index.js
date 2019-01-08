@@ -12,4 +12,4 @@ ReactDOM.render(<App />, document.getElementById('root'));
 serviceWorker.unregister();
 
 
-window.history.replaceState(window.history.state, document.title, "hackprague2019/")
+window.history.replaceState(window.history.state, document.title, "hackathon2019/")
