@@ -32,10 +32,11 @@ const SpeakerText = styled.p`
 
 export default class Speaker extends Component {
   render() {
-    const { photo, name, desc } = this.props.data
+    const { photo, name, desc, link } = this.props.data
 
 
-    const SpeakerPhoto = styled.div`
+    const SpeakerPhoto = styled.a`
+      display: block;
       width: 412px;
       height: 412px;
 
@@ -47,7 +48,8 @@ export default class Speaker extends Component {
     return (
       <SpeakerWrapper>
         <SpeakerName>{ name }</SpeakerName>
-        <SpeakerPhoto  />
+        {link && <SpeakerPhoto href={link} />}
+        {!link && <SpeakerPhoto />}
         <SpeakerText>{ desc }</SpeakerText>
       </SpeakerWrapper>
     )

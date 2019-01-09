@@ -3,22 +3,26 @@
     {
       "name": "Speaker",
       "photo": "nospeaker.png",
-      "desc": "To be announced."
+      "desc": "To be announced.",
+      "link": "mailto:team@hackprague.com?subject=Interested in speaking at HackPrague"
     },
     {
       "name": "Speaker",
       "photo": "nospeaker.png",
-      "desc": "To be announced."
+      "desc": "To be announced.",
+      "link": "mailto:team@hackprague.com?subject=Interested in speaking at HackPrague"
     },
     {
       "name": "Speaker",
       "photo": "nospeaker.png",
-      "desc": "To be announced."
+      "desc": "To be announced.",
+      "link": "mailto:team@hackprague.com?subject=Interested in speaking at HackPrague"
     },
     {
       "name": "Speaker",
       "photo": "nospeaker.png",
-      "desc": "To be announced."
+      "desc": "To be announced.",
+      "link": "mailto:team@hackprague.com?subject=Interested in speaking at HackPrague"
     }
   ],
   "speakers-bckp": [
@@ -83,7 +87,7 @@
     {
       "name": "Evan Sendra",
       "photo": "evan.png",
-      "desc": "Forever trying to know less and learn more. Head of&nbsp;Delivery at STRV. \n Software Engineering B.S. Milwaukee School of Engineering."
+      "desc": "Forever trying to know less and learn more. Head of Delivery at STRV. \n Software Engineering B.S. Milwaukee School of Engineering."
     }
   ],
 

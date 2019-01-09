@@ -27,14 +27,18 @@ const SponsorSection = styled.div`
   flex-direction: row;
 `
 
-const Sponsor1 = styled.div`
+const Sponsor1 = styled.a`
+  display: block;
+
   width: 500px;
   height: 129px;
   background-image: url('sponsors/IPRlogo.png');
   background-size: 500px 129px;
   margin: 0 40px;
 `
-const Sponsor2 = styled.div`
+const Sponsor2 = styled.a`
+  display: block;
+
   width: 416px;
   height: 129px;
   background-image: url('sponsors/OICTLogo.png');
@@ -51,8 +55,8 @@ export default class Sponsors extends Component {
         </TitleWrapper>
 
         <SponsorSection>
-          <Sponsor1 />
-          <Sponsor2 />
+          <Sponsor1 href="http://en.iprpraha.cz/" target="_blank" rel="noopener noreferrer" />
+          <Sponsor2 href="https://operatorict.cz/en/" target="_blank" rel="noopener noreferrer" />
         </SponsorSection>
       </SponsorsWrapper>
     )

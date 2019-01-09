@@ -75,7 +75,7 @@ export default class Speakers extends Component {
         <SpeakersLeft>
           <Title className="item title">{this._getTitleText()}</Title>
           <Text>
-            <p>Our panels will consist of reprezentatives of world-class companies, e.g. Facebook, Google, Blocknify, StartupYard, CEE Hacks and Startup Summit.</p>
+          {(this.props.selector === 'speakers') &&<p>Our panels will consist of representatives of world-class companies.</p>}
           </Text>
 
           {speakers1.map(this._renderSpeaker)}
