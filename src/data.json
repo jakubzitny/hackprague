@@ -1,10 +1,9 @@
 {
   "speakers": [
     {
-      "name": "Speaker",
-      "photo": "nospeaker.png",
-      "desc": "To be announced.",
-      "link": "mailto:team@hackprague.com?subject=Interested in speaking at HackPrague"
+      "name": "Minh Tri Pham",
+      "photo": "minh.png",
+      "desc": "Minh is a co-founder at Docucharm (funded by Y Combinator) and a former product manager at Uber."
     },
     {
       "name": "Speaker",
@@ -88,14 +87,6 @@
       "name": "Evan Sendra",
       "photo": "evan.png",
       "desc": "Forever trying to know less and learn more. Head of Delivery at STRV. \n Software Engineering B.S. Milwaukee School of Engineering."
-    }
-  ],
-
-  "teambckp": [
-    {
-      "name": "Minh Tri Pham",
-      "photo": "minh.png",
-      "desc": "Studied at Yale University\nPrague Native\nProduct manager at Uber\nPreviously worked at Facebook"
     }
   ],
 
