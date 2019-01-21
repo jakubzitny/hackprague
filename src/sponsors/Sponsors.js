@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 const SponsorsWrapper = styled.div`
-  height: 400px;
+  height: 700px;
   width: 1200px;
 
   margin: 80px auto;
@@ -46,6 +46,16 @@ const Sponsor2 = styled.a`
   margin: 0 40px;
 `
 
+const Sponsor3 = styled.a`
+  display: block;
+
+  width: 510px;
+  height: 129px;
+  background-image: url('sponsors/keboola.svg');
+  background-size: 510px 129px;
+  margin: 0 40px;
+`
+
 export default class Sponsors extends Component {
   render() {
     return (
@@ -57,6 +67,9 @@ export default class Sponsors extends Component {
         <SponsorSection>
           <Sponsor1 href="http://en.iprpraha.cz/" target="_blank" rel="noopener noreferrer" />
           <Sponsor2 href="https://operatorict.cz/en/" target="_blank" rel="noopener noreferrer" />
+        </SponsorSection>
+        <SponsorSection>
+          <Sponsor3 href="http://keboola.com" target="_blank" rel="noopener noreferrer" />
         </SponsorSection>
       </SponsorsWrapper>
     )
