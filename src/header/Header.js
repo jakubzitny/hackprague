@@ -213,10 +213,6 @@ const Arrow = styled.div`
 `
 
 export default class Header extends Component {
-  _handleMoreClick = () => {
-    console.warn('TODO: scroll')
-  }
-
   render() {
     return (
       <HeaderWrapper className="App-header" data-ui="App-header">
@@ -225,7 +221,6 @@ export default class Header extends Component {
             <PastYears />
             <Head />
             <Perex>
-              {/* This year, we’ve decided to go with one&nbsp;main&nbsp;theme — <Strong>Smart&nbsp;cities</Strong> — instead of&nbsp;dividing the hackathon into multiple categories. */}
               This year we've decided to go with one main challenge: <Strong>"Use available data to improve the quality of life in cities”</Strong>.
             </Perex>
             <ButtonWrapper>
@@ -245,7 +240,6 @@ export default class Header extends Component {
           </HeaderLeft>
           <HeaderRight>
             <City />
-            {/* <Nav /> */}
           </HeaderRight>
         </HeaderTop>
         <TextsWrapper>
