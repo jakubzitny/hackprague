@@ -7,7 +7,7 @@ import PastYears from './PastYears'
 
 const HeaderWrapper = styled.header`
   background-color: var(--main-color);
-  height: 1120px;
+  height: 1154px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,6 +73,29 @@ const ApplyButton = styled.button`
   }
 
   display: none;
+`
+
+const Calendar = styled.div`
+  &.addeventatc {
+    width: 160px !important;
+
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    font-family: "Open Sans", Roboto, "Segoe UI", Frutiger, "Frutiger Linotype",
+      "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 15px;
+    color: var(--main-color) !important;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 12px;
+    text-transform: uppercase;
+  }
+
+  & .addeventatc_icon {
+    display: none;
+  }
 `
 
 const HeaderRight = styled.div`
@@ -207,6 +230,17 @@ export default class Header extends Component {
             </Perex>
             <ButtonWrapper>
               <ApplyButton onClick={this.props.onApplyClick}>Apply</ApplyButton>
+            </ButtonWrapper>
+            <ButtonWrapper>
+              {/* https://www.addevent.com/add-to-calendar-button */}
+              <Calendar title="Add to Calendar" className="addeventatc" style={{width: '160px !important', boxSizing: 'border-box', borderRadius: 0}}>
+                Add to Calendar
+                <span className="start">05/04/2019 09:00</span>
+                <span className="end">05/05/2019 18:00</span>
+                <span className="timezone">Europe/Prague</span>
+                <span className="title">HackPrague 2019</span>
+                <span className="location">Vyšehradská 2075/51, 128 00 Nové Město</span>
+              </Calendar>
             </ButtonWrapper>
           </HeaderLeft>
           <HeaderRight>
