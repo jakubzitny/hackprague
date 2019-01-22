@@ -87,12 +87,12 @@ a.underlined:hover {
 
 @media (max-width: 425px) {
   .nomobile {
-    display: none;
+    display: none !important;
   }
 }
 
 @media (max-width: 768px) {
   .nomobile2 {
-    display: none;
+    display: none !important;
   }
 }
