@@ -80,8 +80,6 @@ const ApplyButton = styled.button`
   &:hover {
     opacity: 0.9;
   }
-
-  display: none;
 `
 
 const Calendar = styled.div`

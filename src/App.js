@@ -28,7 +28,9 @@ class App extends Component {
   )
 
   _handleApplyClick = () => {
-    console.error('Registration has not started yet.')
+    const TYPEFORM_URL = 'https://hackprague.typeform.com/to/iQA72L'
+
+    window.open(TYPEFORM_URL, '_blank')
   }
 
   _scrollTo(menuItem, offset = 0) {
