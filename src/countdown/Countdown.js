@@ -419,14 +419,14 @@ export default class Countdown extends Component {
                   04/05/2019 <br />
                   HackPrague <br />
                   {/* https://www.addevent.com/add-to-calendar-button */}
-                  <Calendar title="Add to Calendar" className="addeventatc" style={{width: '160px !important', borderRadius: 0}}>
+                  {/* <Calendar title="Add to Calendar" className="addeventatc" style={{width: '160px !important', borderRadius: 0}}>
                     Add to Calendar
                     <span className="start">05/04/2019 09:00</span>
                     <span className="end">05/05/2019 18:00</span>
                     <span className="timezone">Europe/Prague</span>
                     <span className="title">HackPrague 2019</span>
                     <span className="location">Vyšehradská 2075/51, 128 00 Nové Město</span>
-                  </Calendar>
+                  </Calendar> */}
                 </Datum>
               </DataDates>
             </TodosDatesWrapper>
