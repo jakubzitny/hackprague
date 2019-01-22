@@ -59,24 +59,14 @@
 
   "team": [
     {
-      "name": "Michaela Mrazkova",
-      "photo": "michaela_mrazkova.png",
-      "desc": "Studies Artificial Intelligence at the University of Groningen. \n Organized Benelux Conference on Artificial Intelligence."
-    },
-    {
       "name": "Jakub Sedlacek",
       "photo": "jakub_sedlacek.png",
       "desc": "Law student at Charles University. \n Technology ethusiast."
     },
     {
-      "name": "Jakub Žitný",
-      "photo": "jakub_zitny.png",
-      "desc": "PhD student at Czech Technical University with focus on machine learning in medical imaging. \n Software Engineer at Avocode."
-    },
-    {
-      "name": "Michal Jirku",
-      "photo": "michal.png",
-      "desc": "Studied at Czech Technical University and TU Berlin. Presented at conferences in Central Europe and South Korea."
+      "name": "Evan Sendra",
+      "photo": "evan.png",
+      "desc": "Forever trying to know less and learn more. Head of Delivery at STRV. \n Software Engineering B.S. Milwaukee School of Engineering."
     },
     {
       "name": "Helena Nobile",
@@ -84,9 +74,19 @@
       "desc": "Event & organization master."
     },
     {
-      "name": "Evan Sendra",
-      "photo": "evan.png",
-      "desc": "Forever trying to know less and learn more. Head of Delivery at STRV. \n Software Engineering B.S. Milwaukee School of Engineering."
+      "name": "Michal Jirku",
+      "photo": "michal.png",
+      "desc": "Studied at Czech Technical University and TU Berlin. Presented at conferences in Central Europe and South Korea."
+    },
+    {
+      "name": "Michaela Mrazkova",
+      "photo": "michaela_mrazkova.png",
+      "desc": "Studies Artificial Intelligence at the University of Groningen. \n Organized Benelux Conference on Artificial Intelligence."
+    },
+    {
+      "name": "Jakub Žitný",
+      "photo": "jakub_zitny.png",
+      "desc": "PhD student at Czech Technical University with focus on machine learning in medical imaging. \n Software Engineer at Avocode."
     }
   ],
 
