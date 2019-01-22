@@ -334,6 +334,7 @@ const TransitionWrapper = styled.div`
   height: 300px;
   display: flex;
   flex-direction: row;
+  pointer-events: none;
 `
 
 const TransitionAnim = styled.div`
