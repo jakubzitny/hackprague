@@ -1,21 +1,21 @@
 {
   "speakers": [
     {
+      "name": "Speaker",
+      "photo": "nospeaker.png",
+      "desc": "To be announced.",
+      "link": "mailto:team@hackprague.com?subject=Interested in speaking at HackPrague"
+    },
+    {
+      "name": "Speaker",
+      "photo": "nospeaker.png",
+      "desc": "To be announced.",
+      "link": "mailto:team@hackprague.com?subject=Interested in speaking at HackPrague"
+    },
+    {
       "name": "Minh Tri Pham",
       "photo": "minh.png",
       "desc": "Minh is a co-founder at Docucharm (funded by Y Combinator) and a former product manager at Uber."
-    },
-    {
-      "name": "Speaker",
-      "photo": "nospeaker.png",
-      "desc": "To be announced.",
-      "link": "mailto:team@hackprague.com?subject=Interested in speaking at HackPrague"
-    },
-    {
-      "name": "Speaker",
-      "photo": "nospeaker.png",
-      "desc": "To be announced.",
-      "link": "mailto:team@hackprague.com?subject=Interested in speaking at HackPrague"
     },
     {
       "name": "Speaker",
@@ -59,11 +59,6 @@
 
   "team": [
     {
-      "name": "Michal Jirku",
-      "photo": "michal.png",
-      "desc": "Studied at Czech Technical University and TU Berlin. Presented at conferences in Central Europe and South Korea."
-    },
-    {
       "name": "Michaela Mrazkova",
       "photo": "michaela_mrazkova.png",
       "desc": "Studies Artificial Intelligence at the University of Groningen. \n Organized Benelux Conference on Artificial Intelligence."
@@ -77,6 +72,11 @@
       "name": "Jakub Žitný",
       "photo": "jakub_zitny.png",
       "desc": "PhD student at Czech Technical University with focus on machine learning in medical imaging. \n Software Engineer at Avocode."
+    },
+    {
+      "name": "Michal Jirku",
+      "photo": "michal.png",
+      "desc": "Studied at Czech Technical University and TU Berlin. Presented at conferences in Central Europe and South Korea."
     },
     {
       "name": "Helena Nobile",
