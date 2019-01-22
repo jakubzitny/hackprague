@@ -14,10 +14,13 @@ const SpeakersLeft = styled.div`
   display: flex;
   flex-direction: column;
 
-  /* order: 1; */
+  @media (max-width: 1024px) {
+    width: 100vw;
+    align-items: center;
+  }
 
-  @media (max-width: 375px) {
-    width: 375px;
+  @media (max-width: 425px) {
+    align-items: normal;
   }
 
   margin-bottom: 10px;
@@ -25,15 +28,19 @@ const SpeakersLeft = styled.div`
 
 const Title = styled.div`
   margin-top: 32px;
+
+  @media (max-width: 1024px) {
+    text-align: left;
+  }
 `
 
 const Text = styled.div`
   margin: 0 0 96px 64px;
   & p {
-    width: 360px;
+    width: 80vw;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 1024px) {
     margin: 10px 20px;
     box-sizing: content-box;
   }
@@ -48,8 +55,13 @@ const SpeakersRight = styled.div`
   box-sizing: border-box;
   margin-top: 40px;
 
-  @media (max-width: 375px) {
-    width: 375px;
+  @media (max-width: 1024px) {
+    width: 100vw;
+    align-items: center;
+  }
+
+  @media (max-width: 425px) {
+    align-items: normal;
   }
 `
 

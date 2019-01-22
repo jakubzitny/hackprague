@@ -22,7 +22,7 @@ const CountdownWrapper = styled.div`
   background-repeat: repeat;
   background-position: 5px 5px; */
 
-  @media (max-width: 375px) {
+  @media (max-width: 768px) {
     height: 946px;
     margin: 0;
   }
@@ -131,14 +131,20 @@ const DataWrapper = styled.div`
   display: flex;
   flex-direction: row;
 
-  @media (max-width: 375px) {
+  @media (max-width: 768px) {
+    width: 100vw;
     height: auto;
     flex-direction: column;
+    align-items: center;
   }
 `
 
 const TodosDatesWrapper = styled.div`
   display: flex;
+
+  @media (max-width: 375px) {
+    width: 100vw;
+  }
 `
 
 const DataAnim = styled.div`
@@ -219,7 +225,7 @@ const DataTodos = styled.div`
   height: 692px;
 
   & div {
-    @media (max-width: 375px) {
+    @media (max-width: 768px) {
       margin: 32px 32px 48px 0;
     }
 
@@ -241,6 +247,10 @@ const DataDates = styled.div`
   display: flex;
   flex-direction: column;
   width: 360px;
+
+  @media (max-width: 375px) {
+    width: 100vw;
+  }
 `
 
 const Datum = styled.div`
@@ -258,6 +268,10 @@ const Datum = styled.div`
     font-size: 13px;
     line-height: 13px;
     font-weight: 400;
+
+    @media (max-width: 375px) {
+      display: none;
+    }
   }
 `
 
@@ -341,13 +355,13 @@ export default class Countdown extends Component {
     return (
       <WrappedContainer wider>
         <CountdownWrapper id="timeline">
-          <AnimStart className="nomobile">
+          <AnimStart className="nomobile nomobile2">
             <AnimStartPart1 />
             <AnimStartPart2 />
             <AnimStartPart3 />
             <AnimStartPart4 />
           </AnimStart>
-          <TitleWrapper className="nomobile">
+          <TitleWrapper className="nomobile nomobile2">
             <TitleAnim>
               <TitleAnimPart1 />
             </TitleAnim>
@@ -360,7 +374,7 @@ export default class Countdown extends Component {
           </TitleWrapper>
 
           <DataWrapper>
-            <DataAnim className="nomobile">
+            <DataAnim className="nomobile nomobile2">
               <DataAnimPart1 />
               <DataAnimPart2>
                 <BorderDiv />
@@ -418,7 +432,7 @@ export default class Countdown extends Component {
             </TodosDatesWrapper>
           </DataWrapper>
 
-          <TransitionWrapper className="nomobile">
+          <TransitionWrapper className="nomobile nomobile2">
             <TransitionAnim />
           </TransitionWrapper>
 

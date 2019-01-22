@@ -26,8 +26,11 @@ const HeaderTop = styled.div`
   align-items: center;
   justify-content: center;
 
+  @media (max-width: 1024px) {
+    margin-top: 0;
+  }
 
-  @media (max-width: 375px) {
+  @media (max-width: 425px) {
     flex-direction: column;
   }
 `
@@ -40,7 +43,7 @@ const HeaderLeft = styled.div`
   align-items: center;
   justify-content: center;
 
-  @media (max-width: 375px) {
+  @media (max-width: 768px) {
     height: 820px;
   }
 `
@@ -110,6 +113,15 @@ const HeaderRight = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
+
+  @media (max-width: 768px) {
+    width: 60vw;
+  }
+
+  @media (max-width: 425px) {
+    align-items: center;
+    width: 100vw;
+  }
 `
 
 const City = styled.div`
@@ -119,13 +131,15 @@ const City = styled.div`
   background: url('illustration.svg');
   background-repeat: no-repeat;
 
-  @media (max-width: 1200px) {
-    width: 350px;
-    height: 250px;
-
+  @media (max-width: 768px) {
+    width: 850px;
     margin-left: 15px;
   }
 
+  @media (max-width: 425px) {
+    width: 350px;
+    height: 250px;
+  }
 `
 
 
@@ -166,7 +180,7 @@ const Quotes = styled.div`
   line-height: 23px;
   text-align: left;
 
-  @media (max-width: 750px) {
+  @media (max-width: 425px) {
     display: none;
   }
 `
@@ -184,7 +198,7 @@ const Quote = styled.div`
     width: 370px;
   }
 
-  @media (max-width: 1160px) {
+  @media (max-width: 768px) {
     &:nth-of-type(2) p {
       display: none;
     }
@@ -206,7 +220,7 @@ const MoreWrapper = styled.div`
   flex-direction: column;
   align-items: center;
 
-  @media (max-width: 375px) {
+  @media (max-width: 768px) {
     margin: 50px;
   }
 

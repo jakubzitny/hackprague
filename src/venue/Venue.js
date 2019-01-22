@@ -8,11 +8,12 @@ const VenueLeft = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media (max-width: 375px) {
+  @media (max-width: 1024px) {
     order: 1;
+  }
 
+  @media (max-width: 768px) {
     width: 100%;
-
     margin-bottom: 114px;
   }
 `
@@ -24,6 +25,7 @@ const Venue1 = styled.div`
   background-image: url('venue2.png');
   background-color: rgba(32, 69, 156, 0.9);
   background-blend-mode: screen;
+  background-size: contain;
 
   margin-bottom: 64px;
 
@@ -32,11 +34,19 @@ const Venue1 = styled.div`
     height: 360px;
   }
 
+  @media (max-width: 425px) {
+    width: 425px;
+    height: 283px;
+
+    &::before {
+      width: 425px;
+      height: 283px;
+    }
+  }
+
   @media (max-width: 375px) {
     width: 375px;
     height: 250px;
-
-    background-size: contain;
 
     &::before {
       width: 375px;
@@ -54,18 +64,30 @@ const Venue2 = styled.div`
   background-blend-mode: screen;
 
   margin: 64px 0;
+  background-size: contain;
+  background-repeat: no-repeat;
 
   &::before {
     width: 540px;
     height: 360px;
   }
 
+  @media (max-width: 425px) {
+    width: 425px;
+    height: 283px;
+
+    margin-bottom: 10px;
+
+    &::before {
+      width: 425px;
+      height: 283px;
+    }
+  }
+
+
   @media (max-width: 375px) {
     width: 375px;
     height: 250px;
-
-    background-size: contain;
-    margin-bottom: 10px;
 
     &::before {
       width: 375px;
@@ -77,7 +99,7 @@ const Venue2 = styled.div`
 const AnimSpacer = styled.div`
   height: 192px;
 
-  @media (max-width: 375px) {
+  @media (max-width: 1024px) {
     height: 0;
   }
 `
@@ -134,11 +156,11 @@ const VenueText = styled.div`
     font-family: Rockwell;
   }
 
-  @media (max-width: 375px) {
-    width: 279px;
+  @media (max-width: 768px) {
+    width: 75vw;
 
     & p {
-      width: 279px;
+      width: 75vw;
     }
   }
 `
@@ -152,10 +174,6 @@ const Pattern2 = styled.div`
   background-position: 0 32px;
   background-repeat: no-repeat;
   /* transform: rotateX(180deg); */
-
-  @media (max-width: 375px) {
-    display: none;
-  }
 `
 
 const Pattern3 = styled.div`
@@ -165,10 +183,6 @@ const Pattern3 = styled.div`
   border-left: 32px solid var(--main-color);
   border-right: 32px solid var(--main-color);
   box-sizing: border-box;
-
-  @media (max-width: 375px) {
-    display: none;
-  }
 `
 
 const Pattern4 = styled.div`
@@ -177,10 +191,6 @@ const Pattern4 = styled.div`
 
   border-left: 32px solid var(--main-color);
   box-sizing: border-box;
-
-  @media (max-width: 375px) {
-    display: none;
-  }
 `
 
 
@@ -216,9 +226,9 @@ export default class Venue extends Component {
               HackPrague is honered by the fact that CAMP provided us their facitilies to host HackPrague 2019.</p>
             </VenueText>
           </VenueTextSpacer>
-          <Pattern2 />
-          <Pattern3 />
-          <Pattern4 />
+          <Pattern2 className="nomobile" />
+          <Pattern3 className="nomobile" />
+          <Pattern4 className="nomobile" />
         </VenueLeft>
         <VenueRight>
           <Pattern />

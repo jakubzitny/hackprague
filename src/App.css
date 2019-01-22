@@ -85,8 +85,14 @@ a.underlined:hover {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
   .nomobile {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .nomobile2 {
     display: none;
   }
 }

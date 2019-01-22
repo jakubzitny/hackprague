@@ -27,7 +27,7 @@ const FooterWrapper = styled.div`
     cursor: pointer;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 768px) {
     height: auto;
   }
 `
@@ -46,16 +46,22 @@ const FooterContainer = styled.div`
     width: 50%;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 768px) {
     height: auto;
-    width: 375px;
+    width: 100vw;
     flex-direction: column;
 
     & > div {
-      width: 335px;
+      width: 70vw;
       margin: 20px;
-      height: 500px;
+      height: 310px;
       align-items: flex-start;
+    }
+  }
+
+  @media (max-width: 425px) {
+    & > div {
+      height: 500px;
     }
   }
 `
@@ -74,8 +80,8 @@ const Title = styled.h2`
 
   margin-bottom: 30px;
 
-  @media (max-width: 375px) {
-    width: 335px;
+  @media (max-width: 768px) {
+    width: 70vw;
   }
 `
 
@@ -87,8 +93,8 @@ const Text = styled.p`
   font-size: 17px;
   line-height: 23px;
 
-  @media (max-width: 375px) {
-    width: 335px;
+  @media (max-width: 768px) {
+    width: 70vw;
   }
 `
 
@@ -97,7 +103,7 @@ const LogoWrapper = styled.div`
   flex-direction: row;
   /* align-items: center; */
 
-  @media (max-width: 375px) {
+  @media (max-width: 425px) {
     flex-direction: column;
   }
 `
@@ -109,10 +115,13 @@ const Hashtag = styled.div`
   font-size: 36px;
   font-weight: 700;
 
-  @media (max-width: 375px) {
-    width: 335px;
+  @media (max-width: 768px) {
     margin-top: 20px;
     font-size: 30px;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 25px;
   }
 `
 
@@ -122,7 +131,7 @@ const Links = styled.div`
   font-weight: 400;
   width: 100px;
 
-  @media (max-width: 375px) {
+  @media (max-width: 768px) {
     margin-bottom: 20px;
   }
 `

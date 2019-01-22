@@ -43,11 +43,11 @@ const Container = styled.div`
     flex-direction: column;
   }
 
-  @media (max-width: 375px) {
-    width: 375px;
+  @media (max-width: 1024px) {
+    width: 100vw;
 
     &.wider {
-      width: 375px;
+      width: 100vw;
     }
 
     flex-direction: column;

@@ -14,6 +14,7 @@ const DaysBoxWrapper = styled.div`
   margin-left: -32px;
 
   @media (max-width: 375px) {
+    width: 100vw;
     margin: 0;
   }
 `

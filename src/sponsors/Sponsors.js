@@ -13,8 +13,11 @@ const SponsorsWrapper = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media (max-width: 375px) {
-    width: 375px;
+  @media (max-width: 1024px) {
+    width: 100vw;
+  }
+
+  @media (max-width: 768px) {
     height: auto;
     margin: 40px auto;
   }
@@ -39,12 +42,12 @@ const SponsorSection = styled.div`
     background-size: contain;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 768px) {
     flex-direction: column;
     margin: 0 20px;
 
     & a {
-      width: 335px;
+      width: 80vw;
       margin: 10px 0;
     }
   }

@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const SpeakerWrapper = styled.div`
   margin: 0 0 97px 64px;
 
-  @media (max-width: 375px) {
+  @media (max-width: 1024px) {
     margin: 30px 20px;
   }
 `
@@ -28,18 +28,26 @@ const SpeakerName = styled.div`
 
   opacity: 1;
 
-  @media (max-width: 375px) {
+  @media (max-width: 1024px) {
     margin: 0;
     word-spacing: normal;
-    width: 375px;
+    width: 90vw;
   }
 `
 
 const SpeakerText = styled.p`
   width: 412px;
 
+  @media (max-width: 425px) {
+    width: 385px;
+  }
+
   @media (max-width: 375px) {
     width: 335px;
+  }
+
+  @media (max-width: 320px) {
+    width: 280px;
   }
 `
 
@@ -58,10 +66,21 @@ export default class Speaker extends Component {
       background-color: rgba(32, 69, 156, 0.9);
       background-blend-mode: screen;
 
+      background-size: contain;
+
+      @media (max-width: 425px) {
+        width: 385px;
+        height: 385px;
+      }
+
       @media (max-width: 375px) {
         width: 335px;
         height: 335px;
-        background-size: contain;
+      }
+
+      @media (max-width: 320px) {
+        width: 280px;
+        height: 280px;
       }
     `
 

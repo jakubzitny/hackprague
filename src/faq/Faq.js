@@ -12,7 +12,7 @@ const FaqLeft = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media (max-width: 375px) {
+  @media (max-width: 768px) {
     width: auto;
   }
 `
@@ -27,7 +27,7 @@ const FaqRight = styled.div`
   flex-direction: column;
   box-sizing: border-box;
 
-  @media (max-width: 375px) {
+  @media (max-width: 768px) {
     width: auto;
   }
 `
@@ -51,15 +51,15 @@ const FaqItemA = styled.div`
 
   margin-bottom: 64px !important;
 
-  @media (max-width: 375px) {
-    width: 279px;
+  @media (max-width: 768px) {
+    width: 75vw;
   }
 `
 
 const Spacer = styled.div`
   height: 192px;
 
-  @media (max-width: 375px) {
+  @media (max-width: 768px) {
     height: 0;
   }
 `
