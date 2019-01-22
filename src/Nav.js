@@ -56,6 +56,12 @@ const NavWrapper = styled.div`
     opacity: 0.9;
     cursor: pointer;
   }
+
+  @media (max-width: 1200px) {
+    &.wide {
+      display: none;
+    }
+  }
 `
 
 export default class Nav extends Component {
@@ -77,24 +83,27 @@ export default class Nav extends Component {
 
   render() {
     return (
-      <NavWrapper>
-         {this.props.menuItems.map((menuItem, i) => (
-          <ScrollLink
-            spy={true}
-            hashSpy={true}
-            duration={500}
-            smooth={true}
-            to={menuItem}
-            key={`id-${i}`}
-            href={`#${menuItem}`}
-            className={classnames({ active: this._isActive(menuItem), link: true }) }
-            onSetActive={this._handleClick.bind(this, menuItem)}
-            // onClick={this._handleClick.bind(this, menuItem)}
-          >
-            {menuItem}
-          </ScrollLink>
-        ))}
-      </NavWrapper>
+      <div>
+        <NavWrapper className="wide">
+          {this.props.menuItems.map((menuItem, i) => (
+            <ScrollLink
+              spy={true}
+              hashSpy={true}
+              duration={500}
+              smooth={true}
+              to={menuItem}
+              key={`id-${i}`}
+              href={`#${menuItem}`}
+              className={classnames({ active: this._isActive(menuItem), link: true }) }
+              onSetActive={this._handleClick.bind(this, menuItem)}
+              // onClick={this._handleClick.bind(this, menuItem)}
+            >
+              {menuItem}
+            </ScrollLink>
+          ))}
+        </NavWrapper>
+        {/* <Hamburger>X</Hamburger> */}
+      </div>
     )
   }
 }

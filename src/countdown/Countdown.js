@@ -21,6 +21,11 @@ const CountdownWrapper = styled.div`
     linear-gradient(to right, #e9edfe 50%, #fff 50%);
   background-repeat: repeat;
   background-position: 5px 5px; */
+
+  @media (max-width: 375px) {
+    height: 946px;
+    margin: 0;
+  }
 `
 
 const AnimStart = styled.div`
@@ -125,6 +130,15 @@ const DataWrapper = styled.div`
   height: 288px;
   display: flex;
   flex-direction: row;
+
+  @media (max-width: 375px) {
+    height: auto;
+    flex-direction: column;
+  }
+`
+
+const TodosDatesWrapper = styled.div`
+  display: flex;
 `
 
 const DataAnim = styled.div`
@@ -202,9 +216,14 @@ const Pattern2 = styled.div`
 const DataTodos = styled.div`
   display: flex;
   flex-direction: column;
+  height: 692px;
 
   & div {
-    margin: 32px;
+    @media (max-width: 375px) {
+      margin: 32px 32px 48px 0;
+    }
+
+    margin: 32px 32px 48px;
   }
 `
 
@@ -221,10 +240,11 @@ const DataTodos = styled.div`
 const DataDates = styled.div`
   display: flex;
   flex-direction: column;
+  width: 360px;
 `
 
 const Datum = styled.div`
-  height: 96px;
+  min-height: 112px;
   padding-top: 23px;
   box-sizing: border-box;
   color: #4a4a4a;
@@ -233,6 +253,12 @@ const Datum = styled.div`
   font-family: Futura;
   font-size: 20px;
   font-weight: 700;
+
+  & span {
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 400;
+  }
 `
 
 const ApplyButton = styled.button`
@@ -253,8 +279,46 @@ const ApplyButton = styled.button`
     opacity: 0.8;
   }
 
-  display: none;
+  /* display: none; */
+`
 
+const Calendar = styled.div`
+  margin-top: 3px;
+
+  &.addeventatc {
+    width: 160px !important;
+
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    font-family: "Open Sans", Roboto, "Segoe UI", Frutiger, "Frutiger Linotype",
+      "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    color: var(--main-color) !important;
+    text-decoration: none;
+    padding: 12px;
+    text-transform: uppercase;
+
+    background-color: var(--main-color-2);
+
+    font-size: 16px;
+    font-weight: 700 !important;
+    border: none;
+    text-shadow: none;
+    box-shadow: none !important;
+
+    &.addeventatc:hover {
+      opacity: 0.8;
+      background-color: var(--main-color-2);
+      color: var(--main-color) !important;
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+
+  & .addeventatc_icon {
+    display: none;
+  }
 `
 
 const TransitionWrapper = styled.div`
@@ -277,13 +341,13 @@ export default class Countdown extends Component {
     return (
       <WrappedContainer wider>
         <CountdownWrapper id="timeline">
-          <AnimStart>
+          <AnimStart className="nomobile">
             <AnimStartPart1 />
             <AnimStartPart2 />
             <AnimStartPart3 />
             <AnimStartPart4 />
           </AnimStart>
-          <TitleWrapper>
+          <TitleWrapper className="nomobile">
             <TitleAnim>
               <TitleAnimPart1 />
             </TitleAnim>
@@ -295,47 +359,68 @@ export default class Countdown extends Component {
             <TitleText>Timeline</TitleText>
           </TitleWrapper>
 
+          <DataWrapper>
+            <DataAnim className="nomobile">
+              <DataAnimPart1 />
+              <DataAnimPart2>
+                <BorderDiv />
+                <DataAnimPart22>
+                  <Pattern1 />
+                  <Spacer />
+                  <Pattern2 />
+                </DataAnimPart22>
+                <DataAnimPart23 />
+              </DataAnimPart2>
+            </DataAnim>
+            <DaysBox />
+            <TodosDatesWrapper>
+              <DataTodos>
+                {/* <Checkmark /> */}
+                <Square />
+                <Square />
+                <Square />
+                <Square />
+                <Square />
+              </DataTodos>
+              <DataDates>
+                <Datum>
+                  01/03/2019 <br />
+                  Early application deadline <br />
+                  <span>(participants who need to book plane tickets early)</span>
+                </Datum>
+                <Datum>
+                  03/03/2019 <br />
+                  First 30 participants selected
+                </Datum>
+                <Datum>
+                  12/04/2019 <br />
+                  Application deadline <br />
+                  <ApplyButton onClick={this.props.onApplyClick}>Apply</ApplyButton>
+                </Datum>
+                <Datum>
+                  14/04/2019 <br />
+                  Participants selected
+                </Datum>
+                <Datum>
+                  04/05/2019 <br />
+                  HackPrague <br />
+                  {/* https://www.addevent.com/add-to-calendar-button */}
+                  <Calendar title="Add to Calendar" className="addeventatc" style={{width: '160px !important', borderRadius: 0}}>
+                    Add to Calendar
+                    <span className="start">05/04/2019 09:00</span>
+                    <span className="end">05/05/2019 18:00</span>
+                    <span className="timezone">Europe/Prague</span>
+                    <span className="title">HackPrague 2019</span>
+                    <span className="location">Vyšehradská 2075/51, 128 00 Nové Město</span>
+                  </Calendar>
+                </Datum>
+              </DataDates>
+            </TodosDatesWrapper>
+          </DataWrapper>
 
-        <DataWrapper>
-          <DataAnim>
-            <DataAnimPart1 />
-            <DataAnimPart2>
-              <BorderDiv />
-              <DataAnimPart22>
-                <Pattern1 />
-                <Spacer />
-                <Pattern2 />
-              </DataAnimPart22>
-              <DataAnimPart23 />
-            </DataAnimPart2>
-          </DataAnim>
-          <DaysBox />
-          <DataTodos>
-            {/* <Checkmark /> */}
-            <Square />
-            <Square />
-            <Square />
-          </DataTodos>
-          <DataDates>
-            <Datum>
-              12/04/2019 <br />
-              Application deadline <br />
-              <ApplyButton onClick={this.props.onApplyClick}>Apply</ApplyButton>
-            </Datum>
-            <Datum>
-              14/04/2019 <br />
-              Participants selected
-            </Datum>
-            <Datum>
-              04/05/2019 <br />
-              HackPrague
-            </Datum>
-          </DataDates>
-        </DataWrapper>
-
-        <TransitionWrapper>
-          <TransitionAnim />
-        </TransitionWrapper>
+          <TransitionWrapper className="nomobile">
+            <TransitionAnim />
+          </TransitionWrapper>
 
         </CountdownWrapper>
       </WrappedContainer>

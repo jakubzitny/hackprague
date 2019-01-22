@@ -13,6 +13,14 @@ const SpeakersLeft = styled.div`
   width: 50%;
   display: flex;
   flex-direction: column;
+
+  /* order: 1; */
+
+  @media (max-width: 375px) {
+    width: 375px;
+  }
+
+  margin-bottom: 10px;
 `
 
 const Title = styled.div`
@@ -24,6 +32,11 @@ const Text = styled.div`
   & p {
     width: 360px;
   }
+
+  @media (max-width: 375px) {
+    margin: 10px 20px;
+    box-sizing: content-box;
+  }
 `
 
 const SpeakersRight = styled.div`
@@ -34,6 +47,10 @@ const SpeakersRight = styled.div`
   flex-direction: column;
   box-sizing: border-box;
   margin-top: 40px;
+
+  @media (max-width: 375px) {
+    width: 375px;
+  }
 `
 
 

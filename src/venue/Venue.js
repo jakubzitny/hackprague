@@ -8,6 +8,13 @@ const VenueLeft = styled.div`
   display: flex;
   flex-direction: column;
 
+  @media (max-width: 375px) {
+    order: 1;
+
+    width: 100%;
+
+    margin-bottom: 114px;
+  }
 `
 
 const Venue1 = styled.div`
@@ -23,6 +30,18 @@ const Venue1 = styled.div`
   &::before {
     width: 540px;
     height: 360px;
+  }
+
+  @media (max-width: 375px) {
+    width: 375px;
+    height: 250px;
+
+    background-size: contain;
+
+    &::before {
+      width: 375px;
+      height: 250px;
+    }
   }
 `
 
@@ -40,10 +59,27 @@ const Venue2 = styled.div`
     width: 540px;
     height: 360px;
   }
+
+  @media (max-width: 375px) {
+    width: 375px;
+    height: 250px;
+
+    background-size: contain;
+    margin-bottom: 10px;
+
+    &::before {
+      width: 375px;
+      height: 250px;
+    }
+  }
 `
 
 const AnimSpacer = styled.div`
   height: 192px;
+
+  @media (max-width: 375px) {
+    height: 0;
+  }
 `
 
 const VenueRight = styled.div`
@@ -51,6 +87,10 @@ const VenueRight = styled.div`
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+
+  @media (max-width: 375px) {
+    width: 100%;
+  }
 `
 
 const Pattern = styled.div`
@@ -93,6 +133,14 @@ const VenueText = styled.div`
   & a {
     font-family: Rockwell;
   }
+
+  @media (max-width: 375px) {
+    width: 279px;
+
+    & p {
+      width: 279px;
+    }
+  }
 `
 
 // TODO 32 margin top exact
@@ -104,6 +152,10 @@ const Pattern2 = styled.div`
   background-position: 0 32px;
   background-repeat: no-repeat;
   /* transform: rotateX(180deg); */
+
+  @media (max-width: 375px) {
+    display: none;
+  }
 `
 
 const Pattern3 = styled.div`
@@ -113,6 +165,10 @@ const Pattern3 = styled.div`
   border-left: 32px solid var(--main-color);
   border-right: 32px solid var(--main-color);
   box-sizing: border-box;
+
+  @media (max-width: 375px) {
+    display: none;
+  }
 `
 
 const Pattern4 = styled.div`
@@ -121,6 +177,10 @@ const Pattern4 = styled.div`
 
   border-left: 32px solid var(--main-color);
   box-sizing: border-box;
+
+  @media (max-width: 375px) {
+    display: none;
+  }
 `
 
 

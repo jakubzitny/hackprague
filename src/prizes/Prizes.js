@@ -60,6 +60,10 @@ const PrizesTrophy = styled.div`
   margin-bottom: 72px;
 
   background: url('trophy.svg');
+
+  @media (max-width: 375px) {
+    display: none;
+  }
 `
 
 export default class Prizes extends Component {

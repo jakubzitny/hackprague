@@ -26,6 +26,10 @@ const FooterWrapper = styled.div`
     opacity: 0.8;
     cursor: pointer;
   }
+
+  @media (max-width: 375px) {
+    height: auto;
+  }
 `
 
 const FooterContainer = styled.div`
@@ -40,6 +44,19 @@ const FooterContainer = styled.div`
     justify-content: center;
     align-items: center;
     width: 50%;
+  }
+
+  @media (max-width: 375px) {
+    height: auto;
+    width: 375px;
+    flex-direction: column;
+
+    & > div {
+      width: 335px;
+      margin: 20px;
+      height: 500px;
+      align-items: flex-start;
+    }
   }
 `
 
@@ -56,6 +73,10 @@ const Title = styled.h2`
   text-transform: lowercase;
 
   margin-bottom: 30px;
+
+  @media (max-width: 375px) {
+    width: 335px;
+  }
 `
 
 const Text = styled.p`
@@ -65,12 +86,20 @@ const Text = styled.p`
   text-align: left;
   font-size: 17px;
   line-height: 23px;
+
+  @media (max-width: 375px) {
+    width: 335px;
+  }
 `
 
 const LogoWrapper = styled.div`
   display: flex;
   flex-direction: row;
   /* align-items: center; */
+
+  @media (max-width: 375px) {
+    flex-direction: column;
+  }
 `
 
 const Hashtag = styled.div`
@@ -79,6 +108,12 @@ const Hashtag = styled.div`
   font-family: Rockwell;
   font-size: 36px;
   font-weight: 700;
+
+  @media (max-width: 375px) {
+    width: 335px;
+    margin-top: 20px;
+    font-size: 30px;
+  }
 `
 
 const Links = styled.div`
@@ -86,6 +121,10 @@ const Links = styled.div`
   font-size: 17px;
   font-weight: 400;
   width: 100px;
+
+  @media (max-width: 375px) {
+    margin-bottom: 20px;
+  }
 `
 
 export default class Footer extends Component {

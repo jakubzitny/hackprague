@@ -3,6 +3,10 @@ import styled from 'styled-components'
 
 const SpeakerWrapper = styled.div`
   margin: 0 0 97px 64px;
+
+  @media (max-width: 375px) {
+    margin: 30px 20px;
+  }
 `
 
 // TODO
@@ -23,10 +27,20 @@ const SpeakerName = styled.div`
   text-transform: uppercase;
 
   opacity: 1;
+
+  @media (max-width: 375px) {
+    margin: 0;
+    word-spacing: normal;
+    width: 375px;
+  }
 `
 
 const SpeakerText = styled.p`
   width: 412px;
+
+  @media (max-width: 375px) {
+    width: 335px;
+  }
 `
 
 
@@ -43,6 +57,12 @@ export default class Speaker extends Component {
       background-image: url(${`${this.props.selector}/${photo}`});
       background-color: rgba(32, 69, 156, 0.9);
       background-blend-mode: screen;
+
+      @media (max-width: 375px) {
+        width: 335px;
+        height: 335px;
+        background-size: contain;
+      }
     `
 
     return (

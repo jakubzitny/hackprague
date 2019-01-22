@@ -12,6 +12,12 @@ const SponsorsWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 375px) {
+    width: 375px;
+    height: auto;
+    margin: 40px auto;
+  }
 `
 
 const TitleWrapper = styled.div`
@@ -25,24 +31,37 @@ const SponsorSection = styled.div`
 
   display: flex;
   flex-direction: row;
+
+  & a {
+    height: 129px;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  @media (max-width: 375px) {
+    flex-direction: column;
+    margin: 0 20px;
+
+    & a {
+      width: 335px;
+      margin: 10px 0;
+    }
+  }
 `
 
 const Sponsor1 = styled.a`
   display: block;
 
   width: 500px;
-  height: 129px;
   background-image: url('sponsors/IPRlogo.png');
-  background-size: 500px 129px;
   margin: 0 40px;
 `
 const Sponsor2 = styled.a`
   display: block;
 
   width: 416px;
-  height: 129px;
   background-image: url('sponsors/OICTLogo.png');
-  background-size: 416px 129px;
   margin: 0 40px;
 `
 
@@ -50,9 +69,7 @@ const Sponsor3 = styled.a`
   display: block;
 
   width: 510px;
-  height: 129px;
   background-image: url('sponsors/keboola.svg');
-  background-size: 510px 129px;
   margin: 0 40px;
 `
 

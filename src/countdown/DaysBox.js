@@ -11,7 +11,11 @@ const DaysBoxWrapper = styled.div`
   flex-direction: row;
 
   margin-top: 32px;
-  margin-left: -104px;
+  margin-left: -32px;
+
+  @media (max-width: 375px) {
+    margin: 0;
+  }
 `
 
 const Left = styled.div`

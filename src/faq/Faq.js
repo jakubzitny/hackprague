@@ -11,6 +11,10 @@ const FaqLeft = styled.div`
   width: 50%;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 375px) {
+    width: auto;
+  }
 `
 
 const Title = styled.div`
@@ -22,6 +26,10 @@ const FaqRight = styled.div`
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+
+  @media (max-width: 375px) {
+    width: auto;
+  }
 `
 
 const FaqItemQ = styled.div`
@@ -42,10 +50,18 @@ const FaqItemA = styled.div`
   line-height: 21px;
 
   margin-bottom: 64px !important;
+
+  @media (max-width: 375px) {
+    width: 279px;
+  }
 `
 
 const Spacer = styled.div`
   height: 192px;
+
+  @media (max-width: 375px) {
+    height: 0;
+  }
 `
 
 export default class Faq extends Component {

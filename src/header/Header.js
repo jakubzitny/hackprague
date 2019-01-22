@@ -25,6 +25,11 @@ const HeaderTop = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
+
+
+  @media (max-width: 375px) {
+    flex-direction: column;
+  }
 `
 
 const HeaderLeft = styled.div`
@@ -34,6 +39,10 @@ const HeaderLeft = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 375px) {
+    height: 820px;
+  }
 `
 
 const Perex = styled.p`
@@ -111,6 +120,14 @@ const City = styled.div`
   /* border: 1px solid var(--main-color-2); */
   background: url('illustration.svg');
   background-repeat: no-repeat;
+
+  @media (max-width: 1200px) {
+    width: 350px;
+    height: 250px;
+
+    margin-left: 15px;
+  }
+
 `
 
 
@@ -191,8 +208,8 @@ const MoreWrapper = styled.div`
   flex-direction: column;
   align-items: center;
 
-  @media (max-width: 750px) {
-    margin-top: 50px;
+  @media (max-width: 375px) {
+    margin: 50px;
   }
 
 `
@@ -226,8 +243,7 @@ export default class Header extends Component {
             <ButtonWrapper>
               <ApplyButton onClick={this.props.onApplyClick}>Apply</ApplyButton>
             </ButtonWrapper>
-            <ButtonWrapper>
-              {/* https://www.addevent.com/add-to-calendar-button */}
+            {/* <ButtonWrapper>
               <Calendar title="Add to Calendar" className="addeventatc" style={{width: '160px !important', boxSizing: 'border-box', borderRadius: 0}}>
                 Add to Calendar
                 <span className="start">05/04/2019 09:00</span>
@@ -236,7 +252,7 @@ export default class Header extends Component {
                 <span className="title">HackPrague 2019</span>
                 <span className="location">Vyšehradská 2075/51, 128 00 Nové Město</span>
               </Calendar>
-            </ButtonWrapper>
+            </ButtonWrapper> */}
           </HeaderLeft>
           <HeaderRight>
             <City />

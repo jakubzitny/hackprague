@@ -84,3 +84,9 @@ a.underlined:hover {
     transform: rotate(360deg);
   }
 }
+
+@media (max-width: 375px) {
+  .nomobile {
+    display: none;
+  }
+}

@@ -34,6 +34,24 @@ const Container = styled.div`
   &.wider {
     width: 1200px;
   }
+
+  @media (max-width: 1200px) {
+    &.wider {
+      width: 1000px;
+    }
+
+    flex-direction: column;
+  }
+
+  @media (max-width: 375px) {
+    width: 375px;
+
+    &.wider {
+      width: 375px;
+    }
+
+    flex-direction: column;
+  }
 `
 
 
