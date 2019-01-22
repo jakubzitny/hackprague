@@ -299,39 +299,33 @@ const ApplyButton = styled.button`
 const Calendar = styled.div`
   margin-top: 3px;
 
-  &.addeventatc {
-    width: 160px !important;
+  width: 160px !important;
 
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    cursor: pointer;
-    font-family: "Open Sans", Roboto, "Segoe UI", Frutiger, "Frutiger Linotype",
-      "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-    color: var(--main-color) !important;
-    text-decoration: none;
-    padding: 12px;
-    text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  font-family: "Open Sans", Roboto, "Segoe UI", Frutiger, "Frutiger Linotype",
+    "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  color: var(--main-color) !important;
+  text-decoration: none;
+  padding: 12px;
+  text-transform: uppercase;
 
+  background-color: var(--main-color-2);
+
+  font-size: 16px;
+  font-weight: 700 !important;
+  border: none;
+  text-shadow: none;
+  box-shadow: none !important;
+
+  &:hover {
+    opacity: 0.8;
     background-color: var(--main-color-2);
-
+    color: var(--main-color) !important;
     font-size: 16px;
-    font-weight: 700 !important;
-    border: none;
-    text-shadow: none;
-    box-shadow: none !important;
-
-    &.addeventatc:hover {
-      opacity: 0.8;
-      background-color: var(--main-color-2);
-      color: var(--main-color) !important;
-      font-size: 16px;
-      font-weight: 700;
-    }
-  }
-
-  & .addeventatc_icon {
-    display: none;
+    font-weight: 700;
   }
 `
 
@@ -351,6 +345,11 @@ const TransitionAnim = styled.div`
 `
 
 export default class Countdown extends Component {
+  _handleCalendarClick = () => {
+    const CALENDAR_URL = '/hackprague2019.ics'
+    window.open(CALENDAR_URL, '_blank')
+  }
+
   render() {
     return (
       <WrappedContainer wider>
@@ -418,15 +417,9 @@ export default class Countdown extends Component {
                 <Datum>
                   04/05/2019 <br />
                   HackPrague <br />
-                  {/* https://www.addevent.com/add-to-calendar-button */}
-                  {/* <Calendar title="Add to Calendar" className="addeventatc" style={{width: '160px !important', borderRadius: 0}}>
+                  <Calendar onClick={this._handleCalendarClick}>
                     Add to Calendar
-                    <span className="start">05/04/2019 09:00</span>
-                    <span className="end">05/05/2019 18:00</span>
-                    <span className="timezone">Europe/Prague</span>
-                    <span className="title">HackPrague 2019</span>
-                    <span className="location">Vyšehradská 2075/51, 128 00 Nové Město</span>
-                  </Calendar> */}
+                  </Calendar>
                 </Datum>
               </DataDates>
             </TodosDatesWrapper>
