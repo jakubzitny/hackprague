@@ -137,6 +137,7 @@ export default class Footer extends Component {
             <Text>
               <strong>HackPrague</strong> believes that Central Europe has tremendous innovative potential and that Prague can become the ‘Silicon city’ of Europe. We are bringing together Europe’s brightest tech innovators to collaborate, create novel solutions, and share their knowledge. Moreover, we strive to connect technical and non-technical communities by organizing community events including hackathons, workshops and lectures.
               <a href="mailto:team@hackprague.com">team@hackprague.com</a>
+              <a href="http://www.martinkuca.com" target="_blank" rel="noopener noreferrer">Designed by Martin Kuča</a>
             </Text>
           </FooterLeft>
           <FooterRight>
