@@ -223,7 +223,7 @@ export default class Venue extends Component {
             </VenueText>
             <VenueText className="item">
               <p>
-              HackPrague is honered by the fact that CAMP provided us their facitilies to host HackPrague 2019.</p>
+              HackPrague is honored by the fact that CAMP provided us their facitilies to host HackPrague 2019.</p>
             </VenueText>
           </VenueTextSpacer>
           <Pattern2 className="nomobile" />
