@@ -129,6 +129,7 @@ const Links = styled.div`
   text-align: left;
   font-size: 17px;
   font-weight: 400;
+  font-family: Futura;
   width: 100px;
 
   @media (max-width: 768px) {
