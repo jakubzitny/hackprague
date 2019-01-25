@@ -15,7 +15,7 @@ const HeaderWrapper = styled.header`
   font-size: calc(10px + 2vmin);
 
   color: white;
-  font-family: "Rockwell";
+  font-family: Rockwell;
 `
 
 const HeaderTop = styled.div`
@@ -53,7 +53,7 @@ const Perex = styled.p`
   text-align: left;
   font-size: 20px;
   font-weight: 500;
-  font-family: "Rockwell";
+  font-family: Rockwell;
   margin: 35px 0;
   line-height: 27px;
 `

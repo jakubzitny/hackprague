@@ -24,7 +24,7 @@ const NavWrapper = styled.div`
     text-transform: lowercase;
     text-align: right;
     line-height: 32px;
-    font-family: "Futura";
+    font-family: Futura;
     font-size: 18px;
     font-weight: 700;
     color: white;

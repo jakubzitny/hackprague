@@ -23,7 +23,7 @@
 }
 
 h1, h2, h3, p {
-  font-family: "Futura";
+  font-family: Futura;
 }
 
 .App-logo {
@@ -96,3 +96,5 @@ a.underlined:hover {
     display: none !important;
   }
 }
+
+@import '/fonts.css'

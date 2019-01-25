@@ -17,7 +17,7 @@ const PastYearsWrapper = styled.div`
 
 const PastYear = styled.a`
   font-size: 21px;
-  font-family: "Futura";
+  font-family: Futura;
   font-weight: bold;
   text-decoration: none;
 
