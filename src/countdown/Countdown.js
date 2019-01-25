@@ -14,14 +14,6 @@ const CountdownWrapper = styled.div`
 
   margin-left: -252px;
 
-  /* background-color: white;
-  background-size: 16px 16px, 16px 16px;
-  background-image:
-    linear-gradient(to bottom, transparent 50%, #fff 50%),
-    linear-gradient(to right, #e9edfe 50%, #fff 50%);
-  background-repeat: repeat;
-  background-position: 5px 5px; */
-
   @media (max-width: 768px) {
     height: 946px;
     margin: 0;
@@ -44,7 +36,6 @@ const AnimStartPart1 = styled.div`
   background-repeat: no-repeat;
   transform: rotate(180deg);
 
-  /* box-sizing: border-box; */
   box-shadow: inset 32px 0px 0px 0px var(--main-color);
   margin-left: var(--block-size);
 `
@@ -87,7 +78,7 @@ const TitleAnim = styled.div`
 
 const TitleAnimPart1 = styled.div`
   width: 192px;
-  height: 200px; /* TODO */
+  height: 200px;
 
   background: url('pattern-wide.svg');
   background-position: 64px 0;
@@ -168,8 +159,6 @@ const DataAnimPart2 = styled.div`
 
   display: flex;
   flex-direction: column;
-
-  /* border-right: var(--block-size) solid var(--main-color); */
 `
 
 const BorderDiv = styled.div`
@@ -273,61 +262,32 @@ const Datum = styled.div`
       display: none;
     }
   }
-`
 
-const ApplyButton = styled.button`
-  width: 128px;
-  height: 32px;
-  background-color: var(--main-color-2);
-  text-transform: uppercase;
-  color: var(--main-color);
-  font-weight: 700;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
+  & .button {
+    height: 32px;
 
+    padding: 0 30px;
 
-  margin-top: 3px;
-
-  &:hover {
-    opacity: 0.8;
-  }
-
-  /* display: none; */
-`
-
-const Calendar = styled.div`
-  margin-top: 3px;
-
-  width: 160px !important;
-
-  display: inline-block;
-  position: relative;
-  text-align: center;
-  cursor: pointer;
-  font-family: "Open Sans", Roboto, "Segoe UI", Frutiger, "Frutiger Linotype",
-    "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-  color: var(--main-color) !important;
-  text-decoration: none;
-  padding: 12px;
-  text-transform: uppercase;
-
-  background-color: var(--main-color-2);
-
-  font-size: 16px;
-  font-weight: 700 !important;
-  border: none;
-  text-shadow: none;
-  box-shadow: none !important;
-
-  &:hover {
-    opacity: 0.8;
     background-color: var(--main-color-2);
-    color: var(--main-color) !important;
-    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Futura;
+    color: var(--main-color);
     font-weight: 700;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+
+    margin-top: 3px;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 `
+
+const ApplyButton = styled.button``
+const CalendarButton = styled.button``
 
 const TransitionWrapper = styled.div`
   width: 100%;
@@ -409,7 +369,7 @@ export default class Countdown extends Component {
                 <Datum>
                   12/04/2019 <br />
                   Application deadline <br />
-                  <ApplyButton onClick={this.props.onApplyClick}>Apply</ApplyButton>
+                  <ApplyButton onClick={this.props.onApplyClick} className="button">Apply</ApplyButton>
                 </Datum>
                 <Datum>
                   14/04/2019 <br />
@@ -418,9 +378,9 @@ export default class Countdown extends Component {
                 <Datum>
                   04/05/2019 <br />
                   HackPrague <br />
-                  <Calendar onClick={this._handleCalendarClick}>
+                  <CalendarButton onClick={this._handleCalendarClick} className="button">
                     Add to Calendar
-                  </Calendar>
+                  </CalendarButton>
                 </Datum>
               </DataDates>
             </TodosDatesWrapper>

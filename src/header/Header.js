@@ -104,7 +104,6 @@ const HeaderRight = styled.div`
 const City = styled.div`
   width: 700px;
   height: 500px;
-  /* border: 1px solid var(--main-color-2); */
   background: url('illustration.svg');
   background-repeat: no-repeat;
 
@@ -180,8 +179,6 @@ const Quote = styled.div`
       display: none;
     }
   }
-
-
 `
 
 const QuoteBar = styled.div`
@@ -200,7 +197,6 @@ const MoreWrapper = styled.div`
   @media (max-width: 768px) {
     margin: 50px;
   }
-
 `
 
 const More = styled.div`
