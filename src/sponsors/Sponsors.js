@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 const SponsorsWrapper = styled.div`
-  height: 700px;
+  height: 1050px;
   width: 1200px;
 
   margin: 80px auto;
@@ -42,6 +42,11 @@ const SponsorSection = styled.div`
     background-size: contain;
   }
 
+  & a.big {
+    height: 300px;
+    width: 612px;
+  }
+
   @media (max-width: 768px) {
     flex-direction: column;
     margin: 0 20px;
@@ -76,6 +81,31 @@ const Sponsor3 = styled.a`
   margin: 0 40px;
 `
 
+const Sponsor4 = styled.a`
+  display: block;
+
+  width: 463px;
+  background-image: url('sponsors/reactive.png');
+  margin: 0 40px;
+`
+
+const Sponsor5 = styled.a`
+  display: block;
+
+  background-image: url('sponsors/mlprague.png');
+  margin: 0 40px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    margin: 0 20px;
+
+    &.big {
+      width: 80vw !important;
+      margin: 10px 0;
+    }
+  }
+`
+
 export default class Sponsors extends Component {
   render() {
     return (
@@ -89,7 +119,11 @@ export default class Sponsors extends Component {
           <Sponsor2 href="https://operatorict.cz/en/" target="_blank" rel="noopener noreferrer" />
         </SponsorSection>
         <SponsorSection>
-          <Sponsor3 href="http://keboola.com" target="_blank" rel="noopener noreferrer" />
+          <Sponsor5 href="https://mlprague.com" target="_blank" rel="noopener noreferrer" className="big" />
+        </SponsorSection>
+        <SponsorSection>
+          <Sponsor3 href="https://keboola.com" target="_blank" rel="noopener noreferrer" />
+          <Sponsor4 href="https://reactiveconf.com" target="_blank" rel="noopener noreferrer" />
         </SponsorSection>
       </SponsorsWrapper>
     )
