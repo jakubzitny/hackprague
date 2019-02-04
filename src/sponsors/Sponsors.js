@@ -106,6 +106,22 @@ const Sponsor5 = styled.a`
   }
 `
 
+const Sponsor6 = styled.a`
+  display: block;
+
+  width: 413px;
+  background-image: url('sponsors/socialbakers.png');
+  margin: 0 40px;
+`
+
+const Sponsor7 = styled.a`
+  display: block;
+
+  width: 439px;
+  background-image: url('sponsors/czechitas.png');
+  margin: 0 40px;
+`
+
 export default class Sponsors extends Component {
   render() {
     return (
@@ -124,6 +140,10 @@ export default class Sponsors extends Component {
         <SponsorSection>
           <Sponsor3 href="https://keboola.com" target="_blank" rel="noopener noreferrer" />
           <Sponsor4 href="https://reactiveconf.com" target="_blank" rel="noopener noreferrer" />
+        </SponsorSection>
+        <SponsorSection>
+          <Sponsor6 href="https://www.socialbakers.com" target="_blank" rel="noopener noreferrer" />
+          <Sponsor7 href="https://www.czechitas.cz/en/" target="_blank" rel="noopener noreferrer" />
         </SponsorSection>
       </SponsorsWrapper>
     )
