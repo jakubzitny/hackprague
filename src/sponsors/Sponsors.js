@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 const SponsorsWrapper = styled.div`
-  height: 1050px;
+  height: 1400px;
   width: 1200px;
 
   margin: 80px auto;
@@ -34,10 +34,9 @@ const SponsorSection = styled.div`
 
   display: flex;
   flex-direction: row;
+  align-items: center;
 
   & a {
-    height: 129px;
-
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -61,6 +60,7 @@ const SponsorSection = styled.div`
 const Sponsor1 = styled.a`
   display: block;
 
+  height: 129px;
   width: 500px;
   background-image: url('sponsors/IPRlogo.png');
   margin: 0 40px;
@@ -68,6 +68,7 @@ const Sponsor1 = styled.a`
 const Sponsor2 = styled.a`
   display: block;
 
+  height: 129px;
   width: 416px;
   background-image: url('sponsors/OICTLogo.png');
   margin: 0 40px;
@@ -77,6 +78,7 @@ const Sponsor3 = styled.a`
   display: block;
 
   width: 510px;
+  height: 122px;
   background-image: url('sponsors/keboola.svg');
   margin: 0 40px;
 `
@@ -84,6 +86,7 @@ const Sponsor3 = styled.a`
 const Sponsor4 = styled.a`
   display: block;
 
+  height: 129px;
   width: 463px;
   background-image: url('sponsors/reactive.png');
   margin: 0 40px;
@@ -109,7 +112,8 @@ const Sponsor5 = styled.a`
 const Sponsor6 = styled.a`
   display: block;
 
-  width: 413px;
+  height: 152px;
+  width: 542px;
   background-image: url('sponsors/socialbakers.png');
   margin: 0 40px;
 `
@@ -117,8 +121,27 @@ const Sponsor6 = styled.a`
 const Sponsor7 = styled.a`
   display: block;
 
+  height: 129px;
   width: 439px;
   background-image: url('sponsors/czechitas.png');
+  margin: 0 40px;
+`
+
+const Sponsor9 = styled.a`
+  display: block;
+
+  height: 132px;
+  width: 379px;
+  background-image: url('sponsors/apify.png');
+  margin: 0 40px;
+`
+
+const Sponsor8 = styled.a`
+  display: block;
+
+  height: 165px;
+  width: 359px;
+  background-image: url('sponsors/avrar.svg');
   margin: 0 40px;
 `
 
@@ -131,18 +154,22 @@ export default class Sponsors extends Component {
         </TitleWrapper>
 
         <SponsorSection>
-          <Sponsor1 href="http://en.iprpraha.cz/" target="_blank" rel="noopener noreferrer" />
           <Sponsor2 href="https://operatorict.cz/en/" target="_blank" rel="noopener noreferrer" />
+          <Sponsor3 href="https://keboola.com" target="_blank" rel="noopener noreferrer" />
+        </SponsorSection>
+        <SponsorSection>
+          <Sponsor9 href="apify" target="_blank" rel="noopener noreferrer" />
+          <Sponsor6 href="https://www.socialbakers.com" target="_blank" rel="noopener noreferrer" />
+        </SponsorSection>
+        <SponsorSection>
+          <Sponsor1 href="http://en.iprpraha.cz/" target="_blank" rel="noopener noreferrer" />
+          <Sponsor8 href="avrar" target="_blank" rel="noopener noreferrer" />
         </SponsorSection>
         <SponsorSection>
           <Sponsor5 href="https://mlprague.com" target="_blank" rel="noopener noreferrer" className="big" />
         </SponsorSection>
         <SponsorSection>
-          <Sponsor3 href="https://keboola.com" target="_blank" rel="noopener noreferrer" />
           <Sponsor4 href="https://reactiveconf.com" target="_blank" rel="noopener noreferrer" />
-        </SponsorSection>
-        <SponsorSection>
-          <Sponsor6 href="https://www.socialbakers.com" target="_blank" rel="noopener noreferrer" />
           <Sponsor7 href="https://www.czechitas.cz/en/" target="_blank" rel="noopener noreferrer" />
         </SponsorSection>
       </SponsorsWrapper>
