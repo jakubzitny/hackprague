@@ -158,12 +158,12 @@ export default class Sponsors extends Component {
           <Sponsor3 href="https://keboola.com" target="_blank" rel="noopener noreferrer" />
         </SponsorSection>
         <SponsorSection>
-          <Sponsor9 href="apify" target="_blank" rel="noopener noreferrer" />
+          <Sponsor9 href="https://www.apify.com/" target="_blank" rel="noopener noreferrer" />
           <Sponsor6 href="https://www.socialbakers.com" target="_blank" rel="noopener noreferrer" />
         </SponsorSection>
         <SponsorSection>
           <Sponsor1 href="http://en.iprpraha.cz/" target="_blank" rel="noopener noreferrer" />
-          <Sponsor8 href="avrar" target="_blank" rel="noopener noreferrer" />
+          <Sponsor8 href="https://avrar.cz/en" target="_blank" rel="noopener noreferrer" />
         </SponsorSection>
         <SponsorSection>
           <Sponsor5 href="https://mlprague.com" target="_blank" rel="noopener noreferrer" className="big" />
