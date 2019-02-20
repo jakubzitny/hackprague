@@ -78,7 +78,7 @@ const Sponsor3 = styled.a`
   display: block;
 
   width: 510px;
-  height: 122px;
+  height: 113px;
   background-image: url('sponsors/keboola.svg');
   margin: 0 40px;
 `
@@ -130,7 +130,7 @@ const Sponsor7 = styled.a`
 const Sponsor9 = styled.a`
   display: block;
 
-  height: 132px;
+  height: 100px;
   width: 379px;
   background-image: url('sponsors/apify.png');
   margin: 0 40px;
@@ -145,6 +145,15 @@ const Sponsor8 = styled.a`
   margin: 0 40px;
 `
 
+const SponsorAbb = styled.a`
+  display: block;
+
+  height: 70px;
+  width: 240px;
+  background-image: url('sponsors/abb.svg');
+  margin: 0 40px;
+`
+
 export default class Sponsors extends Component {
   render() {
     return (
@@ -154,11 +163,14 @@ export default class Sponsors extends Component {
         </TitleWrapper>
 
         <SponsorSection>
+          <SponsorAbb href="https://new.abb.com" target="_blank" rel="noopener noreferrer" />
           <Sponsor2 href="https://operatorict.cz/en/" target="_blank" rel="noopener noreferrer" />
-          <Sponsor3 href="https://keboola.com" target="_blank" rel="noopener noreferrer" />
         </SponsorSection>
         <SponsorSection>
+          <Sponsor3 href="https://keboola.com" target="_blank" rel="noopener noreferrer" />
           <Sponsor9 href="https://www.apify.com/" target="_blank" rel="noopener noreferrer" />
+        </SponsorSection>
+        <SponsorSection>
           <Sponsor6 href="https://www.socialbakers.com" target="_blank" rel="noopener noreferrer" />
         </SponsorSection>
         <SponsorSection>
