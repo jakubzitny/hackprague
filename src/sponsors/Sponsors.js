@@ -175,8 +175,8 @@ const SponsorVeeam = styled.a`
 const SponsorMPO = styled.a`
   display: block;
 
-  height: 415px;
-  width: 225px;
+  height: 225px;
+  width: 415px;
   background-image: url('sponsors/mpo.svg');
   margin: 0 40px;
 `
