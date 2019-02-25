@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 const SponsorsWrapper = styled.div`
-  height: 1400px;
+  height: 1800px;
   width: 1200px;
 
   margin: 80px auto;
@@ -112,8 +112,8 @@ const Sponsor5 = styled.a`
 const Sponsor6 = styled.a`
   display: block;
 
-  height: 152px;
-  width: 542px;
+  height: 135px;
+  width: 450px;
   background-image: url('sponsors/socialbakers.png');
   margin: 0 40px;
 `
@@ -130,8 +130,8 @@ const Sponsor7 = styled.a`
 const Sponsor9 = styled.a`
   display: block;
 
-  height: 100px;
-  width: 379px;
+  height: 130px;
+  width: 344px;
   background-image: url('sponsors/apify.png');
   margin: 0 40px;
 `
@@ -148,9 +148,36 @@ const Sponsor8 = styled.a`
 const SponsorAbb = styled.a`
   display: block;
 
-  height: 70px;
-  width: 240px;
+  height: 155px;
+  width: 390px;
   background-image: url('sponsors/abb.svg');
+  margin: 0 40px;
+`
+
+const SponsorFlatzone = styled.a`
+  display: block;
+
+  height: 70px;
+  width: 455px;
+  background-image: url('sponsors/flatzone.svg');
+  margin: 0 40px;
+`
+
+const SponsorVeeam = styled.a`
+  display: block;
+
+  height: 65px;
+  width: 445px;
+  background-image: url('sponsors/veeam.svg');
+  margin: 0 40px;
+`
+
+const SponsorMPO = styled.a`
+  display: block;
+
+  height: 415px;
+  width: 225px;
+  background-image: url('sponsors/mpo.svg');
   margin: 0 40px;
 `
 
@@ -164,14 +191,18 @@ export default class Sponsors extends Component {
 
         <SponsorSection>
           <SponsorAbb href="https://new.abb.com" target="_blank" rel="noopener noreferrer" />
-          <Sponsor2 href="https://operatorict.cz/en/" target="_blank" rel="noopener noreferrer" />
+        </SponsorSection>
+        <SponsorSection>
+          <SponsorFlatzone href="https://www.flatzone.cz" target="_blank" rel="noopener noreferrer" />
+          <SponsorVeeam href="https://www.veeam.com/" target="_blank" rel="noopener noreferrer" />
         </SponsorSection>
         <SponsorSection>
           <Sponsor3 href="https://keboola.com" target="_blank" rel="noopener noreferrer" />
-          <Sponsor9 href="https://www.apify.com/" target="_blank" rel="noopener noreferrer" />
+          <Sponsor2 href="https://operatorict.cz/en/" target="_blank" rel="noopener noreferrer" />
         </SponsorSection>
         <SponsorSection>
           <Sponsor6 href="https://www.socialbakers.com" target="_blank" rel="noopener noreferrer" />
+          <Sponsor9 href="https://www.apify.com/" target="_blank" rel="noopener noreferrer" />
         </SponsorSection>
         <SponsorSection>
           <Sponsor1 href="http://en.iprpraha.cz/" target="_blank" rel="noopener noreferrer" />
@@ -183,6 +214,9 @@ export default class Sponsors extends Component {
         <SponsorSection>
           <Sponsor4 href="https://reactiveconf.com" target="_blank" rel="noopener noreferrer" />
           <Sponsor7 href="https://www.czechitas.cz/en/" target="_blank" rel="noopener noreferrer" />
+        </SponsorSection>
+        <SponsorSection>
+          <SponsorMPO href="https://www.mpo.cz/en/" target="_blank" rel="noopener noreferrer" />
         </SponsorSection>
       </SponsorsWrapper>
     )
