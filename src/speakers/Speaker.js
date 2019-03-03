@@ -65,6 +65,7 @@ export default class Speaker extends Component {
       background-image: url(${`${this.props.selector}/${photo}`});
       background-color: rgba(32, 69, 156, 0.9);
       background-blend-mode: screen;
+      background-repeat: no-repeat;
 
       background-size: contain;
 
