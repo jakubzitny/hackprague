@@ -227,7 +227,7 @@ const Checkmark = styled.div`
   width: 40px;
   height: 32px;
 
-  margin: 32px 28px !important;
+  margin-right: 32px;
   vertical-align: top;
   background: url('checkmark.svg');
 `
@@ -363,8 +363,7 @@ export default class Countdown extends Component {
             <TodosDatesWrapper>
               <DataTodos>
                 <Checkmark />
-                {/* <Square /> */}
-                <Square />
+                <Checkmark />
                 <Square />
                 <Square />
                 <Square />
