@@ -222,15 +222,15 @@ const DataTodos = styled.div`
   }
 `
 
-// const Checkmark = styled.div`
-//   display: inline-block;
-//   width: 40px;
-//   height: 32px;
+const Checkmark = styled.div`
+  display: inline-block;
+  width: 40px;
+  height: 32px;
 
-//   margin: 32px 28px !important;
-//   vertical-align: top;
-//   background: url('checkmark.svg');
-// `
+  margin: 32px 28px !important;
+  vertical-align: top;
+  background: url('checkmark.svg');
+`
 
 const DataDates = styled.div`
   display: flex;
@@ -287,7 +287,20 @@ const Datum = styled.div`
 `
 
 const ApplyButton = styled.button``
-const CalendarButton = styled.button``
+const CalendarButton = styled.button`
+  width: 225px;
+`
+const ScheduleButton = styled.a`
+  display: block;
+  line-height: 32px;
+  padding: 0;
+  width: 225px;
+  box-sizing: border-box;
+
+  &:active, &:hover, &:visited, &:link {
+    text-decoration: none;
+  }
+`
 
 const TransitionWrapper = styled.div`
   width: 100%;
@@ -349,8 +362,8 @@ export default class Countdown extends Component {
             <DaysBox />
             <TodosDatesWrapper>
               <DataTodos>
-                {/* <Checkmark /> */}
-                <Square />
+                <Checkmark />
+                {/* <Square /> */}
                 <Square />
                 <Square />
                 <Square />
@@ -378,6 +391,9 @@ export default class Countdown extends Component {
                 <Datum>
                   04/05/2019 <br />
                   HackPrague <br />
+                  <ScheduleButton href="/schedule-2019.html" target="_blank" rel="noopener noreferrer" className="button">
+                    Schedule
+                  </ScheduleButton>
                   <CalendarButton onClick={this._handleCalendarClick} className="button">
                     Add to Calendar
                   </CalendarButton>
