@@ -1,21 +1,20 @@
 {
   "speakers": [
     {
-      "name": "Speaker",
-      "photo": "nospeaker.png",
-      "desc": "To be announced.",
-      "link": "mailto:team@hackprague.com?subject=Interested in speaking at HackPrague"
-    },
-    {
-      "name": "Speaker",
-      "photo": "nospeaker.png",
-      "desc": "To be announced.",
-      "link": "mailto:team@hackprague.com?subject=Interested in speaking at HackPrague"
-    },
-    {
       "name": "Minh Tri Pham",
       "photo": "minh.png",
       "desc": "Minh is a co-founder at Docucharm (funded by Y Combinator) and a former product manager at Uber."
+    },
+    {
+      "name": "Speaker",
+      "photo": "nospeaker.png",
+      "desc": "To be announced.",
+      "link": "mailto:team@hackprague.com?subject=Interested in speaking at HackPrague"
+    },
+    {
+      "name": "Julia Neuschmid",
+      "photo": "julia.jpg",
+      "desc": "As a Senior Research Analyst for IDC Insights Europe, Julia contributes to the IDC Government Insights analysis within Europe, with special focus on Smart Cities. She conducts primary and secondary research with both IT vendors and end users on technology innovations to support sustainable development, improve resilience, meet citizens' expectations, and attract investment, new businesses, and talent in European cities."
     },
     {
       "name": "Speaker",
