@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 const SponsorsWrapper = styled.div`
-  height: 1800px;
+  height: 2300px;
   width: 1200px;
 
   margin: 80px auto;
@@ -139,8 +139,8 @@ const Sponsor9 = styled.a`
 const Sponsor8 = styled.a`
   display: block;
 
-  height: 165px;
-  width: 359px;
+  height: 217px;
+  width: 414px;
   background-image: url('sponsors/avrar.svg');
   margin: 0 40px;
 `
@@ -181,6 +181,25 @@ const SponsorMPO = styled.a`
   margin: 0 40px;
 `
 
+const SponsorEpam = styled.a`
+  display: block;
+
+  height: 170px;
+  width: 415px;
+  background-image: url('sponsors/epam.png');
+  margin: 0 40px;
+`
+
+const SponsorIdc = styled.a`
+  display: block;
+
+  height: 130px;
+  width: 439px;
+  background-image: url('sponsors/idc.png');
+  margin: 0 40px;
+`
+
+
 export default class Sponsors extends Component {
   render() {
     return (
@@ -193,20 +212,26 @@ export default class Sponsors extends Component {
           <SponsorAbb href="https://new.abb.com" target="_blank" rel="noopener noreferrer" />
         </SponsorSection>
         <SponsorSection>
+          <SponsorEpam href="https://www.epam.com/" target="_blank" rel="noopener noreferrer" />
           <SponsorFlatzone href="https://www.flatzone.cz" target="_blank" rel="noopener noreferrer" />
-          <SponsorVeeam href="https://www.veeam.com/" target="_blank" rel="noopener noreferrer" />
         </SponsorSection>
         <SponsorSection>
+          <SponsorVeeam href="https://www.veeam.com/" target="_blank" rel="noopener noreferrer" />
           <Sponsor3 href="https://keboola.com" target="_blank" rel="noopener noreferrer" />
-          <Sponsor2 href="https://operatorict.cz/en/" target="_blank" rel="noopener noreferrer" />
         </SponsorSection>
         <SponsorSection>
           <Sponsor6 href="https://www.socialbakers.com" target="_blank" rel="noopener noreferrer" />
           <Sponsor9 href="https://www.apify.com/" target="_blank" rel="noopener noreferrer" />
         </SponsorSection>
+
+        {/* Partners */}
+        <SponsorSection>
+          <Sponsor8 href="https://avrar.cz/en" target="_blank" rel="noopener noreferrer" />
+          <Sponsor2 href="https://operatorict.cz/en/" target="_blank" rel="noopener noreferrer" />
+        </SponsorSection>
         <SponsorSection>
           <Sponsor1 href="http://en.iprpraha.cz/" target="_blank" rel="noopener noreferrer" />
-          <Sponsor8 href="https://avrar.cz/en" target="_blank" rel="noopener noreferrer" />
+          <SponsorIdc href="https://www.idc.com" target="_blank" rel="noopener noreferrer" />
         </SponsorSection>
         <SponsorSection>
           <Sponsor5 href="https://mlprague.com" target="_blank" rel="noopener noreferrer" className="big" />
