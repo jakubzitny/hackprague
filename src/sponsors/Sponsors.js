@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 const SponsorsWrapper = styled.div`
-  height: 2300px;
+  height: 5000;
   width: 1200px;
 
   margin: 80px auto;
@@ -23,10 +23,17 @@ const SponsorsWrapper = styled.div`
   }
 `
 
+const TitleWrapperTop = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: left;
+`
+
 const TitleWrapper = styled.div`
   width: 100%;
   display: flex;
   justify-content: left;
+  margin-top: 150px;
 `
 
 const SponsorSection = styled.div`
@@ -181,6 +188,15 @@ const SponsorMPO = styled.a`
   margin: 0 40px;
 `
 
+const SponsorSmartPlan = styled.a`
+  display: block;
+
+  height: 300px;
+  width: 415px;
+  background-image: url('sponsors/smartplan.svg');
+  margin: 0 40px;
+`
+
 const SponsorEpam = styled.a`
   display: block;
 
@@ -199,13 +215,49 @@ const SponsorIdc = styled.a`
   margin: 0 40px;
 `
 
+const SponsorMatfyz = styled.a`
+  display: block;
+
+  height: 200px;
+  width: 460px;
+  background-image: url('sponsors/matfyz.jpg');
+  margin: 0 40px;
+`
+
+const SponsorFlowee = styled.a`
+  display: block;
+
+  height: 130px;
+  width: 350px;
+  background-image: url('sponsors/flowee.png');
+  margin: 0 40px;
+`
+
+const SponsorO2 = styled.a`
+  display: block;
+
+  height: 130px;
+  width: 190px;
+  background-image: url('sponsors/o2.svg');
+  margin: 0 40px;
+`
+
 
 export default class Sponsors extends Component {
   render() {
     return (
       <SponsorsWrapper>
+        <TitleWrapperTop>
+          <div className="title item">Under the auspices of</div>
+        </TitleWrapperTop>
+
+        <SponsorSection>
+          <SponsorMPO href="https://www.mpo.cz/en/" target="_blank" rel="noopener noreferrer" />
+        </SponsorSection>
+
+
         <TitleWrapper>
-          <div className="title item">Sponsors & Partners</div>
+          <div className="title item">Sponsors</div>
         </TitleWrapper>
 
         <SponsorSection>
@@ -223,26 +275,60 @@ export default class Sponsors extends Component {
           <Sponsor6 href="https://www.socialbakers.com" target="_blank" rel="noopener noreferrer" />
           <Sponsor9 href="https://www.apify.com/" target="_blank" rel="noopener noreferrer" />
         </SponsorSection>
-
-        {/* Partners */}
         <SponsorSection>
-          <Sponsor8 href="https://avrar.cz/en" target="_blank" rel="noopener noreferrer" />
+          <SponsorSmartPlan href="http://smart-plan.cz/en/" target="_blank" rel="noopener noreferrer" />
+        </SponsorSection>
+
+        <TitleWrapper>
+          <div className="title item">Data Partners</div>
+        </TitleWrapper>
+        <SponsorSection>
+          <SponsorO2 href=" https://www.o2.cz/osobni/en/" target="_blank" rel="noopener noreferrer" />
           <Sponsor2 href="https://operatorict.cz/en/" target="_blank" rel="noopener noreferrer" />
         </SponsorSection>
+
+
+        <TitleWrapper>
+          <div className="title item">Academic Partners</div>
+        </TitleWrapper>
+
         <SponsorSection>
-          <Sponsor1 href="http://en.iprpraha.cz/" target="_blank" rel="noopener noreferrer" />
-          <SponsorIdc href="https://www.idc.com" target="_blank" rel="noopener noreferrer" />
+          <SponsorMatfyz href="https://www.matfyz.cz/" target="_blank" rel="noopener noreferrer" />
         </SponsorSection>
+
+        <TitleWrapper>
+          <div className="title item">Media Partners</div>
+        </TitleWrapper>
+
         <SponsorSection>
-          <Sponsor5 href="https://mlprague.com" target="_blank" rel="noopener noreferrer" className="big" />
+          <SponsorFlowee href="https://www.flowee.cz/" target="_blank" rel="noopener noreferrer" />
+        </SponsorSection>
+
+        <TitleWrapper>
+          <div className="title item">Community Partners</div>
+        </TitleWrapper>
+
+        <SponsorSection>
+          <SponsorIdc href="https://www.idc.com" target="_blank" rel="noopener noreferrer" />
+          <Sponsor8 href="https://avrar.cz/en" target="_blank" rel="noopener noreferrer" />
         </SponsorSection>
         <SponsorSection>
           <Sponsor4 href="https://reactiveconf.com" target="_blank" rel="noopener noreferrer" />
           <Sponsor7 href="https://www.czechitas.cz/en/" target="_blank" rel="noopener noreferrer" />
         </SponsorSection>
         <SponsorSection>
-          <SponsorMPO href="https://www.mpo.cz/en/" target="_blank" rel="noopener noreferrer" />
+          <Sponsor5 href="https://mlprague.com" target="_blank" rel="noopener noreferrer" className="big" />
         </SponsorSection>
+
+
+        <TitleWrapper>
+          <div className="title item">Venue Partner</div>
+        </TitleWrapper>
+
+        <SponsorSection>
+          <Sponsor1 href="http://en.iprpraha.cz/" target="_blank" rel="noopener noreferrer" />
+        </SponsorSection>
+
       </SponsorsWrapper>
     )
   }
