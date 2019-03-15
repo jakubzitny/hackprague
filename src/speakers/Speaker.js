@@ -38,6 +38,15 @@ const SpeakerName = styled.div`
 const SpeakerText = styled.p`
   width: 412px;
 
+  & a, & a:visited, & a:link {
+    color: #4A4A4A;
+    text-decoration: none;
+  }
+
+  & a:hover {
+    text-decoration: underline;
+  }
+
   @media (max-width: 425px) {
     width: 385px;
   }
@@ -90,7 +99,7 @@ export default class Speaker extends Component {
         <SpeakerName>{ name }</SpeakerName>
         {link && <SpeakerPhoto href={link} />}
         {!link && <SpeakerPhoto />}
-        <SpeakerText>{ desc }</SpeakerText>
+        <SpeakerText dangerouslySetInnerHTML={{__html: desc}}></SpeakerText>
       </SpeakerWrapper>
     )
   }
