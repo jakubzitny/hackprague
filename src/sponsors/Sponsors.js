@@ -23,6 +23,31 @@ const SponsorsWrapper = styled.div`
   }
 `
 
+const LogoWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & .logo-title,
+  & .logo-title:link,
+  & .logo-title:active,
+  & .logo-title:visited,
+  & .logo-title:hover {
+    display: block;
+
+    color: var(--main-color);
+
+    font-family: Futura;
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+
+    margin-bottom: 10px;
+  }
+`
+
 const TitleWrapperTop = styled.div`
   width: 100%;
   display: flex;
@@ -242,6 +267,14 @@ const SponsorO2 = styled.a`
   margin: 0 40px;
 `
 
+const SponsorCscc = styled.a`
+  display: block;
+
+  height: 170px;
+  width: 300px;
+  background-image: url('sponsors/cscc.png');
+  margin: 0 40px;
+`
 
 export default class Sponsors extends Component {
   render() {
@@ -253,6 +286,15 @@ export default class Sponsors extends Component {
 
         <SponsorSection>
           <SponsorMPO href="https://www.mpo.cz/en/" target="_blank" rel="noopener noreferrer" />
+        </SponsorSection>
+
+        <SponsorSection>
+          <LogoWrapper>
+          <a href="http://czechsmartcitycluster.com" className="logo-title" target="_blank" rel="noopener noreferrer">
+            President of CSCC prof. Miroslav Svítek
+          </a>
+          <SponsorCscc href="http://czechsmartcitycluster.com" target="_blank" rel="noopener noreferrer" />
+          </LogoWrapper>
         </SponsorSection>
 
 
