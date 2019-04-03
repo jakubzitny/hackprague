@@ -267,12 +267,48 @@ const SponsorO2 = styled.a`
   margin: 0 40px;
 `
 
+const SponsorBrno = styled.a`
+  display: block;
+
+  height: 136px;
+  width: 300px;
+  background-image: url('sponsors/brno.png');
+  margin: 0 40px;
+`
+
+const SponsorLiftago = styled.a`
+  display: block;
+
+  height: 130px;
+  width: 190px;
+  background-image: url('sponsors/liftago.png');
+  margin: 0 40px;
+`
+
 const SponsorCscc = styled.a`
   display: block;
 
   height: 170px;
   width: 300px;
   background-image: url('sponsors/cscc.png');
+  margin: 0 40px;
+`
+
+const SponsorWolt = styled.a`
+  display: block;
+
+  height: 170px;
+  width: 300px;
+  background-image: url('sponsors/wolt.png');
+  margin: 0 40px;
+`
+
+const SponsorCorpisMaps = styled.a`
+  display: block;
+
+  height: 170px;
+  width: 430px;
+  background-image: url('sponsors/corpismaps.png');
   margin: 0 40px;
 `
 
@@ -333,10 +369,14 @@ export default class Sponsors extends Component {
           <div className="title item">Data Partners</div>
         </TitleWrapper>
         <SponsorSection>
-          <SponsorO2 href=" https://www.o2.cz/osobni/en/" target="_blank" rel="noopener noreferrer" />
+          <SponsorO2 href="https://www.o2.cz/osobni/en/" target="_blank" rel="noopener noreferrer" />
           <Sponsor2 href="https://operatorict.cz/en/" target="_blank" rel="noopener noreferrer" />
         </SponsorSection>
 
+        <SponsorSection>
+          <SponsorBrno href="https://www.gotobrno.cz/en/" target="_blank" rel="noopener noreferrer" />
+          <SponsorLiftago href="https://www.liftago.com" target="_blank" rel="noopener noreferrer" />
+        </SponsorSection>
 
         <TitleWrapper>
           <div className="title item">Academic Partners</div>
@@ -365,6 +405,10 @@ export default class Sponsors extends Component {
         <SponsorSection>
           <Sponsor4 href="https://reactiveconf.com" target="_blank" rel="noopener noreferrer" />
           <Sponsor7 href="https://www.czechitas.cz/en/" target="_blank" rel="noopener noreferrer" />
+        </SponsorSection>
+        <SponsorSection>
+          <SponsorWolt href="https://wolt.com" target="_blank" rel="noopener noreferrer" />
+          <SponsorCorpisMaps href="https://www.corpismaps.com" target="_blank" rel="noopener noreferrer"/>
         </SponsorSection>
         <SponsorSection>
           <Sponsor5 href="https://mlprague.com" target="_blank" rel="noopener noreferrer" className="big" />
