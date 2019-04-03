@@ -322,6 +322,14 @@ export default class Sponsors extends Component {
         </SponsorSection>
 
         <TitleWrapper>
+          <div className="title item">Venue Partner</div>
+        </TitleWrapper>
+
+        <SponsorSection>
+          <Sponsor1 href="http://en.iprpraha.cz/" target="_blank" rel="noopener noreferrer" />
+        </SponsorSection>
+
+        <TitleWrapper>
           <div className="title item">Data Partners</div>
         </TitleWrapper>
         <SponsorSection>
@@ -360,15 +368,6 @@ export default class Sponsors extends Component {
         </SponsorSection>
         <SponsorSection>
           <Sponsor5 href="https://mlprague.com" target="_blank" rel="noopener noreferrer" className="big" />
-        </SponsorSection>
-
-
-        <TitleWrapper>
-          <div className="title item">Venue Partner</div>
-        </TitleWrapper>
-
-        <SponsorSection>
-          <Sponsor1 href="http://en.iprpraha.cz/" target="_blank" rel="noopener noreferrer" />
         </SponsorSection>
 
       </SponsorsWrapper>
