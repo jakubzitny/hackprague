@@ -5,7 +5,7 @@ import styled from 'styled-components'
 
 const NavWrapper = styled.div`
   position: fixed;
-  height: 288px;
+  width: 230px;
   right: 20px;
   top: 20%;
   padding: 20px 0;

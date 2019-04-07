@@ -5,6 +5,7 @@ import { Element as ScrollElement, scroller, scrollSpy } from 'react-scroll'
 import Nav from './Nav'
 import Header from './header/Header'
 import Countdown from './countdown/Countdown'
+import Challenges from './challenges/Challenges'
 import Venue from './venue/Venue'
 import Speakers from './speakers/Speakers'
 import Prizes from './prizes/Prizes'
@@ -18,6 +19,7 @@ class App extends Component {
   menuItems = List.of(
     'Home',
     'Timeline',
+    'Challenges',
     'Prizes',
     'Venue',
     'Speakers',
@@ -79,6 +81,9 @@ class App extends Component {
         </ScrollElement>
         <ScrollElement name="Timeline">
           <Countdown onApplyClick={this._handleApplyClick} ref={this.countdownRef} />
+        </ScrollElement>
+        <ScrollElement name="Challenges">
+          <Challenges />
         </ScrollElement>
         <ScrollElement name="Prizes">
         {/* <ScrollLink activeClass="active" to="test1" spy={true} > */}

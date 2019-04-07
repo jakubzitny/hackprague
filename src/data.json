@@ -97,5 +97,116 @@
       "q": "I have more questions!",
       "a": "If you didn’t find the answer to your question here, hit us up at team@hackprague.com."
     }
+  ],
+  "challenges": [
+    {
+      "title": "Challenge 1: Near real-time identification of abnormalities in large datasets",
+      "motivation": "To provide generic alerting system when abnormalities occur in streaming dataset – sample use cases are: Flooding prevention form cameras/radar; Routing of the traffic based on GPS density data; Proactive alerting in case of abnormalities in water or district heating monitoring.",
+      "questions": [
+        "How to visualize large amount of data (metering points) in web environment in geospatial visualization with time dimension (tens/hundred of thousands of distinct KPIs)",
+        "How to aggregate metering points data in geographical regions near real-time",
+        "What is (and does it exist) silver bullet ML algorithm for anomaly detection",
+        "How to provide ML-based decision algorithm based on (big) data streaming near real time"
+      ],
+      "use": [
+        "Sample dataset of KPIs related to water, district heating and flooding measurements will be provided, format TBD",
+        "GEO json with polygon definitions will be provided",
+        "Cardinality: 1.000.000 individual meters"
+      ],
+      "objectives": [
+        "Demonstrate a solution to the problems above on provided dataset",
+        "Demonstrate a solution with simulated data stream",
+        [
+          "Simulate streaming data of the same structure as provided dataset",
+          "Broker and streaming platform is free of choice (Kafka, IoT/Event Hub, any MQTT broker…)"
+        ],
+        "Base the solution on Hadoop/Spark, DataBricks (or similar, but these are preferred)",
+        "Visualize the results",
+        [
+          "Geo spatial interactive map",
+          "Anomaly detection KPIs or indicators",
+          "Visualization of simulated data near real-time"
+        ]
+      ],
+      "notes": [
+        "Near real-time means latency less than 15 seconds."
+      ],
+      "mentors": [
+        "Ondřej Spilka [ABB]"
+      ]
+    },
+    {
+      "title": "Challenge 2: BIG DATA",
+      "motivation": "Collection, evaluation and processing of data describing the movement and behaviour of the population, data showing certain trends, then a combination of such data from different sources. The main factors here are mainly the causes behind these trends (the location of the beginning and the end of the journey, infrastructure, amenities and other). It is all about the combination of Mobile Network Operator data (MNO-data), traffic flow data (traffic surveys), social and demographic data, map applications data and more. The goal is the socalled \"Activity based model\". The aim is approaching Smart City through the citizen (or rather clusters of citizens — buildings).",
+      "questions": [
+        "Traffic models (combination of multiple sources of data and the allocation to the traffic network)",
+        "Classification and assignment of the beginnings and the ends of journeys (combination of BIG DATA and map details)",
+        "Efficient combination of the sources mentioned above – BIG DATA",
+        "The trends of population behaviour and their influence on the optimization of resource utilization",
+        "Technological capabilities of buildings and alterations in behaviour of citizens aiming to improve optimization of resource utilization"
+      ],
+      "use": [ "tba" ],
+      "mentors": [
+        "prof. Miroslav Svítek [CSCC]",
+        "Tomáš Janča [SmartPlan]",
+        "Roman Dostál [SmartPlan]",
+        "Jan Romportl [O2]",
+        "Ivo Brýdl [O2]"
+      ]
+    },
+    {
+      "title": "Challenge 3: Personalised map showing the quality of life in Czech cities",
+      "motivation": "One of the main issues that homebuyers are facing is the lack of ease with identifying areas with the highest quality of life. This usually involves a lengthy process of individual research that ends up being biased, as there is no central resource for reliable real estate data and the information asymmetry in the market is fairly high. The purpose of this challenge is to develop a personalised and user-friendly map visualising the quality of life in Prague, Brno or other big cities in the Czech Republic. Use publicly available data and/or the data provided, develop creative ways to analyse non-transparent factors, and consider user-specified data to offer a personalised approach based on individual needs and beliefs.",
+      "questions": [
+        "Which factors influence the quality of life in cities the most?",
+        "How can these factors be analysed with the limited available data?",
+        "How to visualise the results in a user-friendly way?",
+        "How to make the map personalised to individual needs and beliefs?"
+      ],
+      "use": [ "tba" ],
+      "mentors": [
+        "Tomáš Linhart [Backend Developer at Flat Zone]",
+        "Jiří Eckstein [Data Analyst at Flat Zone]"
+      ]
+    },
+    {
+      "title": "Challenge 4: Creating a database of municipal facilities",
+      "motivation": "Currently, there is no integrated storage of information about the public facilities of Czech municipalities. There are, however, individual pieces of information available on the internet. The aim of this challenge is to create a tool for collecting and accessing information about the public facilities of Czech municipalities. In particular, the term ‘public facilities’ encompasses educational, healthcare, cultural, shopping, restaurant, delivery, etc. services. Based on this information, the ministry can improve the planning of public service development.",
+      "questions": "What is the coverage of municipal facilities, including GPs, gynecologists, dentists, and pediatricians? What is the coverage of municipal facilities, including general stores by retail floor space? In which municipalities is it possible to collect parcels at pick up points of delivery services?",
+      "use": [
+        "Website scraping",
+        "Mapy.cz, googlemaps, etc"
+      ],
+      "mentors": [
+        "Ministry of the interior of the Czech Republic",
+        "Apify"
+      ]
+    },
+    {
+      "title": "Open challenge",
+      "motivation": "We don't want to restrict your creativity, you can always work on your own project. But if you need some other inspiration besides already defined challenges, then there are more possible areas to hack :)",
+      "questions": [
+        "Solve the emergency situations in cities. Public transport and car traffic. (Proposed by Ministry of Transport of the Czech Republic)",
+        "Parking prediction models (Operator ICT)",
+        "How to optimize expansion of public transport network",
+        "Efficiency of public agendas at town halls etc.",
+        "Efficiency of government processes regarding changes to the cities",
+        "Show and prove (based on data), what is assumed to be a problem in cities, but is actually not a problem.",
+        "Analyze the differences between spatial development strategy and the real state of the city",
+        "City comparator for different datasets",
+        "Street furniture and billboards, how to creatively use them. Add IoT sensors, air fresheners, etc… (Proposed by Flowee)",
+        "Last mile transportation (charging stations near public transport stations) (Proposed by Flowee)",
+        "Sustainability in cities and how to save water, waste, parks, brownfields (Proposed by Flowee)",
+        "City data integrator for multiple cities, like public transport, free park places etc.. (Proposed by Ministry of Regional Development)",
+        "Improvement and planning of public transport information system (Proposed by Ministry of Regional Development)",
+        "Energetics — how to efficiently save energy in public buildings, energy efficiency/performance (Proposed by Ministry of Regional Development)",
+        "Tourism, figure out a way help tourists understand non-english information in the city, inform them creatively about risks (map of pickpockets, signs, etc.)",
+        "Participation on public decisions regarding city planning, infrastructure and getting feedback on what should be changed (Proposed by Ministry of Regional Development)",
+        "Maps of subjective feelings at different places in the city. What people like and dislike and make some kind of a \"heatmap\" which parts are making people feel positive and which not (Proposed by Ministry of Regional Development)"
+      ],
+      "use": [
+        "Feel free to use any available dataset"
+      ]
+    }
   ]
 }
