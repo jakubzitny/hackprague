@@ -23,39 +23,6 @@
       "link": "mailto:team@hackprague.com?subject=Interested in speaking at HackPrague"
     }
   ],
-  "speakers-bckp": [
-    {
-      "name": "Tomas Studenik",
-      "photo": "studenik.png",
-      "desc": "Radical innovator and city hacker. Organizer of smart city hackathons CEE Hacks and Czech FuckUp Nights. Founder of multiple startups."
-    },
-    {
-      "name": "Cedric Maloux",
-      "photo": "cedric.png",
-      "desc": "Serial entrepreneur for the past 22 years. Initially an engineer in AI, now running StartupYard, the oldest running startups accelerator in CEE."
-    },
-    {
-      "name": "Jiri Vicherek",
-      "photo": "vicherek.png",
-      "desc": "Specialist on PR and Content Marketing, startup mentor and founder of PR agency Fenek^^. Past director of Tyinternety.cz and Startup Summit."
-    },
-    {
-      "name": "Tomas Mikolov",
-      "photo": "tomas-mikolov.png",
-      "desc": "Research scientist at Facebook AI Research. Previously member of Google Brain team. Inventor of word2vec."
-    },
-    {
-      "name": "Dite Gashi",
-      "photo": "dite_gashi.png",
-      "desc": "Committed entrepreneur working on Decissio and Blocknify. Business-head MBA and Blockchain Developer with 6+ years of experience."
-    },
-    {
-      "name": "Bob Van Luijt",
-      "photo": "bob-van-luijt.png",
-      "desc": "Google Developer Expert. Founder of Kubrickology, creative technologist, artist and designer. Currently working on SeMI."
-    }
-  ],
-
   "team": [
     {
       "name": "Jakub Sedlacek",
@@ -131,45 +98,4 @@
       "a": "If you didn’t find the answer to your question here, hit us up at team@hackprague.com."
     }
   ],
-
-  "sponsors": [
-    {
-      "category": "Platinum sponsors",
-      "sponsors": [ "unicorn" ]
-    },
-    {
-      "category": "Golden sponsors",
-      "sponsors": [
-        "jetbrains",
-        "embedit"
-      ]
-    },
-    {
-      "category": "Silver sponsors",
-      "sponsors": [
-        "rafbank",
-        "socialbakers",
-        "br41n.io",
-        "kiwi.com",
-        "apify",
-        "amio"
-      ]
-    }
-  ],
-
-  "partners": [
-    "mlprague",
-    "mfp",
-    "webexpo",
-    "matfyz",
-    "turris",
-    "czechitas",
-    "fuckup",
-    "lifos",
-    "icoholder",
-    "startupyard",
-    "vedavyzkum",
-    "don",
-    "reactive"
-  ]
 }
