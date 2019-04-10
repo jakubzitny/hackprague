@@ -249,6 +249,15 @@ const SponsorIdc = styled.a`
   margin: 0 40px;
 `
 
+const SponsorFIT = styled.a`
+  display: block;
+
+  height: 200px;
+  width: 460px;
+  background-image: url('sponsors/fit.svg');
+  margin: 0 40px;
+`
+
 const SponsorMatfyz = styled.a`
   display: block;
 
@@ -393,6 +402,7 @@ export default class Sponsors extends Component {
         </TitleWrapper>
 
         <SponsorSection>
+          <SponsorFIT href="https://fit.cvut.cz/en" target="_blank" rel="noopener noreferrer" />
           <SponsorMatfyz href="https://www.matfyz.cz/" target="_blank" rel="noopener noreferrer" />
         </SponsorSection>
 
