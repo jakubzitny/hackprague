@@ -216,8 +216,8 @@ const SponsorMPO = styled.a`
 const SponsorMMR = styled.a`
   display: block;
 
-  height: 225px;
-  width: 415px;
+  height: 135px;
+  width: 440px;
   background-image: url('sponsors/mmr.svg');
   margin: 0 40px;
 `
@@ -332,7 +332,9 @@ export default class Sponsors extends Component {
         <SponsorSection>
           <SponsorMPO href="https://www.mpo.cz/en/" target="_blank" rel="noopener noreferrer" />
         </SponsorSection>
-
+        <SponsorSection>
+          <SponsorMMR href="https://mmr.cz/en/Homepage" target="_blank" rel="noopener noreferrer" />
+        </SponsorSection>
         <SponsorSection>
           <LogoWrapper>
           <a href="http://czechsmartcitycluster.com" className="logo-title" target="_blank" rel="noopener noreferrer">
@@ -341,11 +343,6 @@ export default class Sponsors extends Component {
           <SponsorCscc href="http://czechsmartcitycluster.com" target="_blank" rel="noopener noreferrer" />
           </LogoWrapper>
         </SponsorSection>
-
-        <SponsorSection>
-          <SponsorMMR href="https://mmr.cz/en/Homepage" target="_blank" rel="noopener noreferrer" />
-        </SponsorSection>
-
 
         <TitleWrapper>
           <div className="title item">Sponsors</div>
