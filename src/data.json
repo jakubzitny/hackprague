@@ -105,11 +105,11 @@
       "questions": [
         "How to visualize large amount of data (metering points) in web environment in geospatial visualization with time dimension (tens/hundred of thousands of distinct KPIs)",
         "How to aggregate metering points data in geographical regions near real-time",
-        "What is (and does it exist) silver bullet ML algorithm for anomaly detection",
+        "What is (and does it exist) silver bullet ML algorithm for anomaly detection applied to timeseries data",
         "How to provide ML-based decision algorithm based on (big) data streaming near real time"
       ],
       "use": [
-        "Sample dataset of KPIs related to water, district heating and flooding measurements will be provided, format TBD",
+        "Sample dataset of KPIs related to water, district heating and flooding measurements will be provided, format columnar CSV",
         "GEO json with polygon definitions will be provided",
         "Cardinality: 1.000.000 individual meters"
       ],
