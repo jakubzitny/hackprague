@@ -330,6 +330,49 @@ const SponsorCorpisMaps = styled.a`
   margin: 0 40px;
 `
 
+const SponsorCEEHacks = styled.a`
+  display: block;
+
+  height: 170px;
+  width: 230px;
+  background-image: url('sponsors/ceehacks.png');
+  margin: 0 40px;
+`
+const SponsorVB = styled.a`
+  display: block;
+
+  height: 185px;
+  width: 230px;
+  background-image: url('sponsors/vzdelanibudoucnosti.png');
+  margin: 0 40px;
+`
+const SponsorPrgAi = styled.a`
+  display: block;
+
+  height: 185px;
+  width: 480px;
+  background-image: url('sponsors/prgai.png');
+  margin: 0 40px;
+`
+
+const SponsorHere = styled.a`
+  display: block;
+
+  height: 135px;
+  width: 200px;
+  background-image: url('sponsors/here.png');
+  margin: 0 40px;
+`
+
+const SponsorLifos = styled.a`
+  display: block;
+
+  height: 100px;
+  width: 225px;
+  background-image: url('sponsors/lifos.jpg');
+  margin: 0 40px;
+`
+
 export default class Sponsors extends Component {
   render() {
     return (
@@ -395,6 +438,7 @@ export default class Sponsors extends Component {
         <SponsorSection>
           <SponsorBrno href="https://www.gotobrno.cz/en/" target="_blank" rel="noopener noreferrer" />
           <SponsorLiftago href="https://www.liftago.com" target="_blank" rel="noopener noreferrer" />
+          <SponsorHere href="https://www.here.com/" target="_blank" rel="noopener noreferrer" />
         </SponsorSection>
 
         <TitleWrapper>
@@ -432,6 +476,14 @@ export default class Sponsors extends Component {
         </SponsorSection>
         <SponsorSection>
           <Sponsor5 href="https://mlprague.com" target="_blank" rel="noopener noreferrer" className="big" />
+        </SponsorSection>
+        <SponsorSection>
+          <SponsorCEEHacks href="https://www.ceehacks.com/" target="_blank" rel="noopener noreferrer" />
+          <SponsorVB href="https://www.facebook.com/vzdelanibudoucnosti/" target="_blank" rel="noopener noreferrer"/>
+        </SponsorSection>
+        <SponsorSection>
+          <SponsorPrgAi href="https://prg.ai" target="_blank" rel="noopener noreferrer"/>
+          <SponsorLifos href="#" />
         </SponsorSection>
 
       </SponsorsWrapper>
