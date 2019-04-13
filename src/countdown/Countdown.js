@@ -379,12 +379,12 @@ export default class Countdown extends Component {
                   First 30 participants selected
                 </Datum>
                 <Datum>
-                  12/04/2019 <br />
+                  19/04/2019 <br />
                   Application deadline <br />
                   <ApplyButton onClick={this.props.onApplyClick} className="button">Apply</ApplyButton>
                 </Datum>
                 <Datum>
-                  14/04/2019 <br />
+                  21/04/2019 <br />
                   Participants selected
                 </Datum>
                 <Datum>
