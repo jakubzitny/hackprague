@@ -70,8 +70,12 @@
       "a": "There are many reason. We’ll name just a few though. You can come to enjoy a weekend of innovation and fun with 150 smartest technologists, to interact with the top European and American companies. There will also be workshops and talks by experienced professionals, free food and swag. And well, of course, prize money."
     },
     {
-      "q": "Can I work in a team?",
-      "a": "Yes, you can work in a team of up to 4 people. If you come alone, you can participate in our team formation event at the beginning of the hackathon, where you can meet others with similar interests and complementary skillsets."
+      "q": "Can I register if I don't have a team",
+      "a": "Of course! 😊 You can participate in our team formation event at the beginning of the hackathon, where you can meet others with similar interests and complementary skillsets. Together you will be able to build a great team from scratch."
+    },
+    {
+      "q": "How many people are allowed to be in one team?",
+      "a": "You can work in a team of up to 4 people."
     },
     {
       "q": "Can I sleep at HackPrague?",
@@ -90,6 +94,10 @@
       "a": "Not only is our hackathon 100% free to attend but we’ll also provide you with free food, snacks and swag."
     },
     {
+      "q": "Do you provide travel reimbursement?",
+      "a": "Unfortunately we provide no travel reimbursement."
+    },
+    {
       "q": "Why are you organizing this event?",
       "a": "We feel that Prague and the Central European region have a tremendous creative potential that hasn’t yet been realized. Our mission is to become a platform for passionate technologists to meet, collaborate, and form relationships that extend well beyond the hackathon."
     },
@@ -106,7 +114,7 @@
         "How to visualize large amount of data (metering points) in web environment in geospatial visualization with time dimension (tens/hundred of thousands of distinct KPIs)",
         "How to aggregate metering points data in geographical regions near real-time",
         "What is (and does it exist) silver bullet ML algorithm for anomaly detection applied to timeseries data",
-        "How to provide ML-based decision algorithm based on (big) data streaming near real time"
+        "How to provide near real time ML based decision algorithms based on (big) data streaming"
       ],
       "use": [
         "Sample dataset of KPIs related to water, district heating and flooding measurements will be provided, format columnar CSV",
@@ -163,7 +171,16 @@
         "How to visualise the results in a user-friendly way?",
         "How to make the map personalised to individual needs and beliefs?"
       ],
-      "use": [ "tba" ],
+      "use": [ 
+        "golemio.cz,
+        "data.brno.cz",
+        "opendata.praha.eu",
+        "opendata.iprpraha.cz",
+        "czso.cz",
+        "geoportal.cuzk.cz",
+        "mapy.cz, openstreetmaps.cz, overpass-turbo.eu",
+        "sreality.cz, realitymix.centrum.cz, bezrealitky.cz.."
+      ],
       "mentors": [
         "Tomáš Linhart [Backend Developer at Flat Zone]",
         "Jiří Eckstein [Data Analyst at Flat Zone]"
@@ -180,6 +197,19 @@
       "mentors": [
         "Ministry of the interior of the Czech Republic",
         "Apify"
+      ]
+    },
+    {
+      "title": "Challenge 5: Involving the public in community development using IT and specifically emotional maps",
+      "motivation": "To develop cities in accordance with the people’s needs and desires, effective tools of communication with the public need to be sought to enable town halls to gain insight into the needs and opinions of the community. This may be the following: 1. The public’s need for change in the community, or vice versa, places that people hold in high regard and wish to be preserved; 2. The public’s view on intended development projects and their planned implementations. Traditional participatory methods such as public hearings appeal to a very narrow segment of the population, especially in larger cities, thus, a 'smart' use of new IT tools may significantly expand the group of public being involved.",
+      "questions": "The question is how to use IT technology to engage a wider range of the public, by using in particular GIS(Geographic information system) applications and emotional maps to make decisions on the development of the municipality, city, neighbourhood and specific public areas. This may be the following:", [
+        "Development of public spaces and parks,
+        "Deciding on the location of public investments in forms of swimming pools, sports halls, summer cinemas, community centers etc.",
+        "Planning measures to increase safety in the villages, cities, district eg. Placements of new security cameras and street lights"
+      ],
+      "use": "Existing webs like 'zmente.to' can be interconnected or used to extend security and pedestrian traffic or other types of problems (cleanliness and maintenance of public greenery, waste, and container placement ...)",
+      "mentors": [
+        "Zuzana Drhová (Ministry of regional development CZ)"
       ]
     },
     {
@@ -200,7 +230,6 @@
         "City data integrator for multiple cities, like public transport, free park places etc.. (Proposed by Ministry of Regional Development)",
         "Improvement and planning of public transport information system (Proposed by Ministry of Regional Development)",
         "Energetics — how to efficiently save energy in public buildings, energy efficiency/performance (Proposed by Ministry of Regional Development)",
-        "Tourism, figure out a way help tourists understand non-english information in the city, inform them creatively about risks (map of pickpockets, signs, etc.)",
         "Participation on public decisions regarding city planning, infrastructure and getting feedback on what should be changed (Proposed by Ministry of Regional Development)",
         "Maps of subjective feelings at different places in the city. What people like and dislike and make some kind of a \"heatmap\" which parts are making people feel positive and which not (Proposed by Ministry of Regional Development)"
       ],
