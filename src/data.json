@@ -202,7 +202,8 @@
     {
       "title": "Challenge 5: Involving the public in community development using IT and specifically emotional maps",
       "motivation": "To develop cities in accordance with the people’s needs and desires, effective tools of communication with the public need to be sought to enable town halls to gain insight into the needs and opinions of the community. This may be the following: 1. The public’s need for change in the community, or vice versa, places that people hold in high regard and wish to be preserved; 2. The public’s view on intended development projects and their planned implementations. Traditional participatory methods such as public hearings appeal to a very narrow segment of the population, especially in larger cities, thus, a 'smart' use of new IT tools may significantly expand the group of public being involved.",
-      "questions": "The question is how to use IT technology to engage a wider range of the public, by using in particular GIS(Geographic information system) applications and emotional maps to make decisions on the development of the municipality, city, neighbourhood and specific public areas. This may be the following:", [
+      "questions": "The question is how to use IT technology to engage a wider range of the public, by using in particular GIS(Geographic information system) applications and emotional maps to make decisions on the development of the municipality, city, neighbourhood and specific public areas. This may be the following:",
+      [
         "Development of public spaces and parks",
         "Deciding on the location of public investments in forms of swimming pools, sports halls, summer cinemas, community centers etc.",
         "Planning measures to increase safety in the villages, cities, district eg. Placements of new security cameras and street lights"
