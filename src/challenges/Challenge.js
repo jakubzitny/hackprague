@@ -40,6 +40,15 @@ const SectionParagraph = styled.p`
   margin: 15px 0 0 0;
   font-size: 16px;
   font-weight: 500;
+
+  & a, & a:visited, & a:link {
+    color: #000;
+    text-decoration: none;
+  }
+
+  & a:hover {
+    text-decoration: underline;
+  }
 `
 
 export default class Challenge extends Component {
@@ -84,7 +93,7 @@ export default class Challenge extends Component {
           </ul>
         )}
         {(!Array.isArray(sectionContents) &&
-          <SectionParagraph>{sectionContents}</SectionParagraph>
+          <SectionParagraph dangerouslySetInnerHTML={{__html: sectionContents}}></SectionParagraph>
         )}
       </SectionsWrapper>
     )
