@@ -395,6 +395,10 @@ export default class Sponsors extends Component {
           <SponsorCscc href="http://czechsmartcitycluster.com" target="_blank" rel="noopener noreferrer" />
           </LogoWrapper>
         </SponsorSection>
+        <SponsorSection>
+          <Sponsor1 href="http://en.iprpraha.cz/" target="_blank" rel="noopener noreferrer" />
+        </SponsorSection>
+
 
         <TitleWrapper>
           <div className="title item">Sponsors</div>
