@@ -74,7 +74,7 @@ export default class Speakers extends Component {
 
   _fetchSpeakers() {
     const speakers = List(data[this.props.selector])
-    const halfSize = Math.floor(speakers.size / 2)
+    const halfSize = Math.ceil(speakers.size / 2)
 
     return [
       speakers.splice(0, halfSize),
