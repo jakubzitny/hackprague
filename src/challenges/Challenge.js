@@ -88,7 +88,7 @@ export default class Challenge extends Component {
                 )
               }
 
-              return <li key={`${sectionKey}-${liId}`}>{sectionContentsPart}</li>
+              return <li key={`${sectionKey}-${liId}`} dangerouslySetInnerHTML={{__html: sectionContentsPart}}></li>
             })}
           </ul>
         )}

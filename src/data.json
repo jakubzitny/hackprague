@@ -231,18 +231,18 @@
       ]
     },
     {
-      "title": "Challenge 6: Integrated Suburban & Municipal Public Transport (Prazska Integrovana Doprava – PID) – data analysis and presentation",
+      "title": "Challenge 6: Integrated Suburban & Municipal Public Transport (PID) – data analysis and presentation",
       "motivation": "Real-time data from individual public transport providers (ROPID) showing location and time delays of public transport vehicles are available. Realization of data analysis showing average delays, where the delays are mainly caused, which city areas are the most problematic etc. would be really interesting. These results could provide ROPID and OICT better understanding of the current situation of public transport. OICT also offers up to date API time schedules in GFTS. OICT will publicize data for 1 month and together with ROPID they would appreciate to get some ideas how to read and use it to improve the public transport for the citizens.",
       "questions": [
         "Transport prediction based on previous bus delays",
         "API for departure table (list of arriving buses including current delay)"
       ],
       "use": [
-        "PID time schedules -  <a href='http://opendata.praha.eu/dataset/jizdni-rady-pid/' target='_blank' rel='noopener noreferrer'>http://opendata.praha.eu/dataset/jizdni-rady-pid</a>",
-        "PID means of transport positions - <a href='http://opendata.praha.eu/dataset/polohy-vozu-pid' target='_blank' rel='noopener noreferrer'>http://opendata.praha.eu/dataset/polohy-vozu-pid</a>",
-        "PID stops – individual stop signs (Geodata) - <a href='http://opendata.praha.eu/dataset/zastavky-pid-jednotlive-oznacniky-geodata' target='_blank' rel='noopener noreferrer'>http://opendata.praha.eu/dataset/zastavky-pid-jednotlive-oznacniky-geodata</a>",
-        "PID stops by means of transport (Geodata) - <a href='http://opendata.praha.eu/dataset/zastavky-pid-dle-druhu-dopravy-geodata' target='_blank' rel='noopener noreferrer'>http://opendata.praha.eu/dataset/zastavky-pid-dle-druhu-dopravy-geodata</a>",
-        "PID lines (Geodata) - <a href='http://opendata.praha.eu/dataset/linky-pid-geodata' target='_blank' rel='noopener noreferrer'>http://opendata.praha.eu/dataset/linky-pid-geodata</a>"
+        "<a href='http://opendata.praha.eu/dataset/jizdni-rady-pid/' target='_blank' rel='noopener noreferrer'>PID time schedules</a>",
+        "<a href='http://opendata.praha.eu/dataset/polohy-vozu-pid' target='_blank' rel='noopener noreferrer'>PID means of transport positions</a>",
+        "<a href='http://opendata.praha.eu/dataset/zastavky-pid-jednotlive-oznacniky-geodata' target='_blank' rel='noopener noreferrer'>PID stops – individual stop signs (Geodata)</a>",
+        "<a href='http://opendata.praha.eu/dataset/zastavky-pid-dle-druhu-dopravy-geodata' target='_blank' rel='noopener noreferrer'>PID stops by means of transport (Geodata)</a>",
+        "<a href='http://opendata.praha.eu/dataset/linky-pid-geodata' target='_blank' rel='noopener noreferrer'>PID lines (Geodata)</a>"
       ],
       "mentors": [
         "Benedikt Kotmel [Operátor ICT]",
