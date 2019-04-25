@@ -364,8 +364,8 @@ export default class Countdown extends Component {
               <DataTodos>
                 <Checkmark />
                 <Checkmark />
-                <Square />
-                <Square />
+                <Checkmark />
+                <Checkmark />
                 <Square />
               </DataTodos>
               <DataDates>
