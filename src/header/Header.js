@@ -225,9 +225,9 @@ export default class Header extends Component {
             <Perex>
               This year we've decided to go with one main challenge: <Strong>"Use available data to improve the quality of life in cities”</Strong>.
             </Perex>
-            <ButtonWrapper>
+            {/* <ButtonWrapper>
               <ApplyButton onClick={this.props.onApplyClick}>Apply</ApplyButton>
-            </ButtonWrapper>
+            </ButtonWrapper> */}
           </HeaderLeft>
           <HeaderRight>
             <City />

@@ -381,7 +381,7 @@ export default class Countdown extends Component {
                 <Datum>
                   19/04/2019 <br />
                   Application deadline <br />
-                  <ApplyButton onClick={this.props.onApplyClick} className="button">Apply</ApplyButton>
+                  {/* <ApplyButton onClick={this.props.onApplyClick} className="button">Apply</ApplyButton> */}
                 </Datum>
                 <Datum>
                   21/04/2019 <br />
