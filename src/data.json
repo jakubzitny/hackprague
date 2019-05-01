@@ -256,6 +256,19 @@
       ]
     },
     {
+      "title": "Challenge 7: Cycle routes are necessary, but where do we build them?",
+      "motivation": "More than 60 % of the landscape in Brno is flat or moderately wavy, and it is therefore possible to use bikes as a means of transportation for a crucial number of passengers, alleviating the problem of overloaded transportation by motor vehicles. Due to the absence of suitable cycling infrastructure, the percentage of transportation by cycling is very low (around 1 %) and the development of new cycling infrastructure is practically non-existent. The city of Brno has an access to a general cycling infrastructure development plan and data which can give us an insight into the most suitable sites for cycling infrastructure development, such that the current  problem with overloaded transportation is solved. Brno needs to create a model which would classify cycle routes as either “low-hanging fruits” (with the most potential for improvement), routes with moderate potential, and those with low potential. Any further insights gained by analyzing provided data, that could contribute to the popularization or improvement of conditions for cycling in Brno, are welcome.",
+      "questions": [
+        "Lack of cycling infrastructure",
+        "Collisions of cyclists"
+      ],
+      "use": [
+        "Keboola: Data about cycling routes, intensity, accidents, offenses from Brno city",
+        "<a href='http://velonet.cz/opendatahttps://velonet.cz/opendata' target='_blank' rel='noopener noreferrer'>Velonet data</a>",
+        "Intensity of road traffic from HERE Technologies"
+      ]
+    },
+    {
       "title": "Open challenge",
       "motivation": "We don't want to restrict your creativity, you can always work on your own project. But if you need some other inspiration besides already defined challenges, then there are more possible areas to hack :)",
       "questions": [
