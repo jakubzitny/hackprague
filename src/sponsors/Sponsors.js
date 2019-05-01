@@ -276,6 +276,15 @@ const SponsorFlowee = styled.a`
   margin: 0 40px;
 `
 
+const SponsorVav = styled.a`
+  display: block;
+
+  height: 125px;
+  width: 445px;
+  background-image: url('sponsors/vedavyzkum.svg');
+  margin: 0 40px;
+`
+
 const SponsorO2 = styled.a`
   display: block;
 
@@ -373,6 +382,33 @@ const SponsorLifos = styled.a`
   margin: 0 40px;
 `
 
+const SponsorTurris = styled.a`
+  display: block;
+
+  height: 100px;
+  width: 315px;
+  background-image: url('sponsors/turris.png');
+  margin: 0 40px;
+`
+
+const SponsorKiwi = styled.a`
+  display: block;
+
+  height: 115px;
+  width: 230px;
+  background-image: url('sponsors/kiwi.svg');
+  margin: 0 40px;
+`
+
+const SponsorRedbull = styled.a`
+  display: block;
+
+  height: 215px;
+  width: 285px;
+  background-image: url('sponsors/redbull.jpg');
+  margin: 0 40px;
+`
+
 export default class Sponsors extends Component {
   render() {
     return (
@@ -460,12 +496,18 @@ export default class Sponsors extends Component {
 
         <SponsorSection>
           <SponsorFlowee href="https://www.flowee.cz/" target="_blank" rel="noopener noreferrer" />
+          <SponsorVav href="https://vedavyzkum.cz/" target="_blank" rel="noopener noreferrer" />
         </SponsorSection>
 
         <TitleWrapper>
           <div className="title item">Community Partners</div>
         </TitleWrapper>
 
+        <SponsorSection>
+          <SponsorTurris href="https://www.turris.cz/en/index/" target="_blank" rel="noopener noreferrer" />
+          <SponsorKiwi href="https://www.kiwi.com/en/" target="_blank" rel="noopener noreferrer" />
+          <SponsorRedbull href="https://www.redbull.com/cz-cs/" target="_blank" rel="noopener noreferrer" />
+        </SponsorSection>
         <SponsorSection>
           <SponsorIdc href="https://www.idc.com" target="_blank" rel="noopener noreferrer" />
           <Sponsor8 href="https://avrar.cz/en" target="_blank" rel="noopener noreferrer" />
