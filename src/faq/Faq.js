@@ -79,7 +79,7 @@ export default class Faq extends Component {
     return (
       <div key={`speaker-${i}`}>
         <FaqItemQ className="item">{data.q}</FaqItemQ>
-        <FaqItemA className="item">{data.a}</FaqItemA>
+        <FaqItemA className="item" dangerouslySetInnerHTML={{__html: data.a}}></FaqItemA>
       </div>
     )
   }

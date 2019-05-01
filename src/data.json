@@ -97,7 +97,7 @@
     },
     {
       "q": "How do you select winners?",
-      "a": "Relevance - Does it fit the theme - Smart Cities?\nTechnical Difficulty - Was it hard to make?\nPolish - Was it presented nicely? \n Creativity - Is it novel? \n Usefulness - Does it have actual potential?"
+      "a": "Relevance - Does it fit 'Smart Cities'? <b>20 %</b><br/>Technical Difficulty - Was it hard to make? <b>15 %</b><br/>Functionality - Does the team have a funcitonal prototype? Does the app work? How many functions of the app are implemented. <b>20 %</b><br/>Polish - Was it presented nicely? <b>10 %</b><br/> Creativity of solution - Is it novel? <b>10 %</b><br/> Usefulness - Does it actually improve the quality of life in cities? <b>25 %</b><br/> <b>Total 100%.</b>"
     },
     {
       "q": "Will it cost me money?",
