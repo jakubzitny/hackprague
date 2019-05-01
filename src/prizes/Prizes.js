@@ -35,13 +35,13 @@ const Type = styled.div`
   font-size: 18px;
 `
 
-// const PrizeComment = styled.div`
-//   width: 243px;
-//   font-family: Rockwell;
-//   font-size: 17px;
-//   font-weight: 400;
-//   line-height: 23px;
-// `
+const PrizeComment = styled.div`
+  width: 243px;
+  font-family: Rockwell;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 23px;
+`
 
 const PrizesRight = styled.div`
   width: 50%;
@@ -103,12 +103,15 @@ export default class Prizes extends Component {
         </PrizesLeft>
         <PrizesRight>
           <PrizesTrophy />
-          {/* <PrizeItem className="item">
-            <PrizeMore>Get accelerated</PrizeMore>
+          <PrizeItem className="item">
+            <PrizeMore>Special prizes</PrizeMore>
           </PrizeItem>
           <PrizeComment className="item">
-            Our partner <b>StartupYard</b> will offer <b>up to 5 teams</b> the possibility to receive <b>€30,000</b> investment and the opportunity to be <b>accelerated for 3 months</b> in Sept - Nov 2018.
-          </PrizeComment> */}
+            <b>Veeam</b> will offer <b>500GB external Samsung SSD T5</b> for each member of team with the best project written in C#.
+          </PrizeComment>
+          <PrizeComment className="item">
+            <b>Kiwi</b> will add <b>100 EUR flight vouchers</b> for each team member of winning team.
+          </PrizeComment>
         </PrizesRight>
       </WrappedContainer>
     )
