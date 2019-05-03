@@ -74,18 +74,22 @@ export default class DaysBox extends Component {
     const HP_DATE = '2019-05-04'
     const timeDifference = new Date(HP_DATE).getTime() - Date.now()
 
-    return Math.floor(timeDifference / (1000 * 60 * 60 * 24))
+    const diff = Math.round(timeDifference / (1000 * 60 * 60 * 24)) + 1
+
+    return (diff >= 0) ? diff : 0
   }
 
   render() {
+    const days = this._getDaysToHackPrague()
+    const dayText = days === 1 ? 'day' : 'days'
     return (
       <DaysBoxWrapper>
         <Left>
           <Logo />
         </Left>
         <Right>
-          <Number>{this._getDaysToHackPrague()}</Number>
-          <Text>days to <br />HackPrague</Text>
+          <Number>{days}</Number>
+          <Text>{dayText} to <br />HackPrague</Text>
         </Right>
       </DaysBoxWrapper>
     )
