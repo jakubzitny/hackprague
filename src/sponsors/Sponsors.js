@@ -219,7 +219,7 @@ const SponsorMMR = styled.a`
   height: 135px;
   width: 440px;
   background-image: url('sponsors/mmr.svg');
-  margin: 0 40px;
+  margin-top: 30px;
 `
 
 const SponsorSmartPlan = styled.a`
@@ -345,7 +345,7 @@ const SponsorCEEHacks = styled.a`
   height: 170px;
   width: 230px;
   background-image: url('sponsors/ceehacks.png');
-  margin: 0 40px;
+  margin: 0 20px;
 `
 const SponsorVB = styled.a`
   display: block;
@@ -353,7 +353,7 @@ const SponsorVB = styled.a`
   height: 185px;
   width: 230px;
   background-image: url('sponsors/vzdelanibudoucnosti.png');
-  margin: 0 40px;
+  margin: 0 20px;
 `
 const SponsorPrgAi = styled.a`
   display: block;
@@ -409,6 +409,32 @@ const SponsorRedbull = styled.a`
   margin: 0 40px;
 `
 
+const SponsorScalingo = styled.a`
+  display: block;
+
+  height: 70px;
+  width: 320px;
+  background-image: url('sponsors/scalingo.svg');
+  margin: 0 40px;
+`
+
+const SponsorPraha = styled.a`
+  display: block;
+
+  height: 215px;
+  width: 285px;
+  background-image: url('sponsors/praha.svg');
+  margin: 0 40px;
+`
+
+const SponsorAvocode = styled.a`
+  display: block;
+
+  height: 85px;
+  width: 350px;
+  background-image: url('sponsors/avocode.svg');
+`
+
 export default class Sponsors extends Component {
   render() {
     return (
@@ -419,9 +445,11 @@ export default class Sponsors extends Component {
 
         <SponsorSection>
           <SponsorMPO href="https://www.mpo.cz/en/" target="_blank" rel="noopener noreferrer" />
+          <SponsorMMR href="https://mmr.cz/en/Homepage" target="_blank" rel="noopener noreferrer" />
         </SponsorSection>
         <SponsorSection>
-          <SponsorMMR href="https://mmr.cz/en/Homepage" target="_blank" rel="noopener noreferrer" />
+          <SponsorPraha href="http://www.praha.eu/jnp/en/index.html" target="_blank" rel="noopener noreferrer" />
+          <Sponsor1 href="http://en.iprpraha.cz/" target="_blank" rel="noopener noreferrer" />
         </SponsorSection>
         <SponsorSection>
           <LogoWrapper>
@@ -431,10 +459,6 @@ export default class Sponsors extends Component {
           <SponsorCscc href="http://czechsmartcitycluster.com" target="_blank" rel="noopener noreferrer" />
           </LogoWrapper>
         </SponsorSection>
-        <SponsorSection>
-          <Sponsor1 href="http://en.iprpraha.cz/" target="_blank" rel="noopener noreferrer" />
-        </SponsorSection>
-
 
         <TitleWrapper>
           <div className="title item">Sponsors</div>
@@ -505,12 +529,15 @@ export default class Sponsors extends Component {
 
         <SponsorSection>
           <SponsorTurris href="https://www.turris.cz/en/index/" target="_blank" rel="noopener noreferrer" />
-          <SponsorKiwi href="https://www.kiwi.com/en/" target="_blank" rel="noopener noreferrer" />
           <SponsorRedbull href="https://www.redbull.com/cz-cs/" target="_blank" rel="noopener noreferrer" />
         </SponsorSection>
         <SponsorSection>
           <SponsorIdc href="https://www.idc.com" target="_blank" rel="noopener noreferrer" />
           <Sponsor8 href="https://avrar.cz/en" target="_blank" rel="noopener noreferrer" />
+        </SponsorSection>
+        <SponsorSection>
+          <SponsorKiwi href="https://www.kiwi.com/en/" target="_blank" rel="noopener noreferrer" />
+          <SponsorScalingo href="https://scalingo.com" target="_blank" rel="noopener noreferrer" />
         </SponsorSection>
         <SponsorSection>
           <Sponsor4 href="https://reactiveconf.com" target="_blank" rel="noopener noreferrer" />
@@ -526,6 +553,7 @@ export default class Sponsors extends Component {
         <SponsorSection>
           <SponsorCEEHacks href="https://www.ceehacks.com/" target="_blank" rel="noopener noreferrer" />
           <SponsorVB href="https://www.facebook.com/vzdelanibudoucnosti/" target="_blank" rel="noopener noreferrer"/>
+          <SponsorAvocode href="https://avocode.com" target="_blank" rel="noopener noreferrer"/>
         </SponsorSection>
         <SponsorSection>
           <SponsorPrgAi href="https://prg.ai" target="_blank" rel="noopener noreferrer"/>
