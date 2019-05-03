@@ -273,7 +273,33 @@
       "motivation": "We don't want to restrict your creativity, you can always work on your own project. But if you need some other inspiration besides already defined challenges, then there are more possible areas to hack :)",
       "questions": [
         "Solve the emergency situations in cities. Public transport and car traffic. (Proposed by Ministry of Transport of the Czech Republic)",
-        "Parking prediction models (Operator ICT)",
+        "Local air pollution (Proposed by Operátor ICT)",
+        [
+          "Analysis of local environmental data in relation to other data (temperature, dust particles...) and development of a mobile app that would notify users about the local state of air pollution.",
+          "For example information when it is the best to go for a run",
+          "Data: https://golemio.cz/cs/node/622",
+          "Questions: What is the relationship between traffic and air pollution? What is the relationship between temperature, humidity, dust particles, ozone, etc. How about other data and indicators?"
+        ],
+        "Real estate situation (Proposed by Operátor ICT)",
+        [
+          "Seznam.cz provides API on real estate price offers on sreality.cz, the largest advertising portal in the Czech Republic. OICT has an access to AirBnB data. The aim is to analyze the real estate market and create an app to display the data using heatmaps, indicators, etc.",
+          "Prague does not have an overview of the current real estate market situation across different areas, which would be useful in planning and decision-making.",
+          "Data: seznam.cz API, golemio.cz, Apify"
+        ],
+        "P+R (Park and ride)(Proposed by Operátor ICT)",
+        [
+          "We have data from P+R carrying information about the number of parking vehicles over time, including information about the parking availability. It would be useful to map the availability of such parking lots over the course of 24 hours on selected days (Monday, Tuesday, Wednesday…). Alternatively, it would be interesting to investigate the possibility of mapping the availability of parking lots in combination with public transport schedules (ROPID) and create an app which would automatically suggest convenient public transport connections."
+        ],
+        "Traffic detectors (Proposed by Operátor ICT)",
+        [
+          "We can provide a data sample (corrected and clean data) from traffic detectors CollectR. The location of strategic, traffic, or camera detectors, is always known. These locations are stored in GIS in the e-maps of Prague in the format .shp. The data provide information about the traffic intensity in a given driving direction for each traffic lane individually ( the same applies for measured point speed) and passing cars are classified as either passenger cars or trucks. In comparison to FCD (floating car data), the point speed measurements provide information about the absolute value of a traffic situation. It would be useful to compare known traffic flows in GIS (or a map application) and visualize data of these traffic flows (traffic intensity diagram) over the course of 24 hours (for each selected day of a week individually, and be able to compare days interactively).",
+          "Similar to what has just been described, we can prepare a new data sample from the same type of strategic CollectR detectors, however, these data have neither been cleansed nor corrected. Another interesting challenge is to think of an algorithm for data cleansing and correction. Given the huge volume of data, manual cleaning and correction of faulty/missing information is not possible. Usually, there are multiple different types of errors, and the task would require data analysis, definition of error type,  implementation of an algorithm and verification of the functionality of the algorithm.",
+          "Another task with the same dataset: you could design and create a model of the emission load from cars in given points of measurement. Points could be spread across whole lanes monitored by strategic detectors. In a similar way, using the same data sample, you could create a model for estimate of traffic noise and visualize the data in a map either statically or interactively over the course of 24 hours for a selected day of a week."
+        ],
+        "Interactive map (Proposed by Operátor ICT)",
+        [
+          "The task is to create interactive map of noise, humidity, temperature, pressure and emission load (CO, NO2, O3, PM10, PM2.5,SO2)."
+        ],
         "How to optimize expansion of public transport network",
         "Efficiency of public agendas at town halls etc.",
         "Efficiency of government processes regarding changes to the cities",
