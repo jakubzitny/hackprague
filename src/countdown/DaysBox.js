@@ -74,7 +74,7 @@ export default class DaysBox extends Component {
     const HP_DATE = '2019-05-04'
     const timeDifference = new Date(HP_DATE).getTime() - Date.now()
 
-    const diff = Math.round(timeDifference / (1000 * 60 * 60 * 24)) + 1
+    const diff = Math.round(timeDifference / (1000 * 60 * 60 * 24))
 
     return (diff >= 0) ? diff : 0
   }
