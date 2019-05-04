@@ -69,19 +69,33 @@ const ButtonWrapper = styled.div`
   justify-content: flex-start;
 `
 
-const ApplyButton = styled.button`
+const ApplyButton = styled.a`
+  display: block;
+
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Futura;
+  margin-top: 3px;
+
   width: 160px;
-  height: 48px;
+  /* height: 48px; */
   background-color: var(--main-color-2);
   text-transform: uppercase;
   color: var(--main-color);
-  font-weight: 800;
-  font-size: 22px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
   border: none;
   cursor: pointer;
 
   &:hover {
     opacity: 0.9;
+    text-decoration: none
+  }
+
+  &:link, &:visited, &:active {
+    text-decoration: none
   }
 `
 
@@ -214,6 +228,7 @@ const Arrow = styled.div`
   border-top: 20px solid var(--main-color-2);
 `
 
+
 export default class Header extends Component {
   render() {
     return (
@@ -225,8 +240,16 @@ export default class Header extends Component {
             <Perex>
               This year we've decided to go with one main challenge: <Strong>"Use available data to improve the quality of life in cities”</Strong>.
             </Perex>
+            <ButtonWrapper>
+              <ApplyButton href="/schedule-2019.html" target="_blank" rel="noopener noreferrer">Schedule</ApplyButton>
+            </ButtonWrapper>
+            <ButtonWrapper>
+              <ApplyButton href="/venueplan.jpg" target="_blank" rel="noopener noreferrer">Map</ApplyButton>
+            </ButtonWrapper>
             {/* <ButtonWrapper>
-              <ApplyButton onClick={this.props.onApplyClick}>Apply</ApplyButton>
+              <ScheduleButton href="/svenueplan.jpg" target="_blank" rel="noopener noreferrer" className="button">
+                Map
+              </ScheduleButton>
             </ButtonWrapper> */}
           </HeaderLeft>
           <HeaderRight>
