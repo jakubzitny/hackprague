@@ -366,7 +366,7 @@ export default class Countdown extends Component {
                 <Checkmark />
                 <Checkmark />
                 <Checkmark />
-                <Square />
+                <Checkmark />
               </DataTodos>
               <DataDates>
                 <Datum>
@@ -393,9 +393,9 @@ export default class Countdown extends Component {
                   <ScheduleButton href="/schedule-2019.html" target="_blank" rel="noopener noreferrer" className="button">
                     Schedule
                   </ScheduleButton>
-                  <CalendarButton onClick={this._handleCalendarClick} className="button">
+                  {/* <CalendarButton onClick={this._handleCalendarClick} className="button">
                     Add to Calendar
-                  </CalendarButton>
+                  </CalendarButton> */}
                 </Datum>
               </DataDates>
             </TodosDatesWrapper>
