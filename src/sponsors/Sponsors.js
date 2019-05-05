@@ -435,6 +435,15 @@ const SponsorAvocode = styled.a`
   background-image: url('sponsors/avocode.svg');
 `
 
+const SponsorP6 = styled.a`
+  display: block;
+
+  height: 254px;
+  width: 250px;
+  margin: 30px 0 0 40px;
+  background-image: url('sponsors/praha6.svg');
+`
+
 export default class Sponsors extends Component {
   render() {
     return (
@@ -453,11 +462,12 @@ export default class Sponsors extends Component {
         </SponsorSection>
         <SponsorSection>
           <LogoWrapper>
-          <a href="http://czechsmartcitycluster.com" className="logo-title" target="_blank" rel="noopener noreferrer">
-            President of CSCC prof. Miroslav Svítek
-          </a>
-          <SponsorCscc href="http://czechsmartcitycluster.com" target="_blank" rel="noopener noreferrer" />
+            <a href="http://czechsmartcitycluster.com" className="logo-title" target="_blank" rel="noopener noreferrer">
+              President of CSCC prof. Miroslav Svítek
+            </a>
+            <SponsorCscc href="http://czechsmartcitycluster.com" target="_blank" rel="noopener noreferrer" />
           </LogoWrapper>
+          <SponsorP6 href="https://www.praha6.cz" target="_blank" rel="noopener noreferrer" />
         </SponsorSection>
 
         <TitleWrapper>
