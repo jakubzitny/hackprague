@@ -83,14 +83,17 @@ export default class Prizes extends Component {
           <PrizeItem className="item">
             <Prize>50000 CZK</Prize>
             <Type>Grand prize</Type>
+            <Type>Winner — <a href="https://devpost.com/software/smart-traffic-5b9lk6" target="_blank" rel="noopener noreferrer">Smart Trafic</a></Type>
           </PrizeItem>
           <PrizeItem className="item">
             <Prize>30000 CZK</Prize>
             <Type>2nd place prize</Type>
+            <Type>Winner — <a href="https://devpost.com/software/park-and-roll" target="_blank" rel="noopener noreferrer">Park & Roll</a></Type>
           </PrizeItem>
           <PrizeItem className="item">
             <Prize>10000 CZK</Prize>
             <Type>3rd place prize</Type>
+            <Type>Winner — <a href="https://devpost.com/software/park-me-0ce58j" target="_blank" rel="noopener noreferrer">Park.me</a></Type>
           </PrizeItem>
           <PrizeItem className="item">
             <PrizeMore>And more</PrizeMore>
@@ -108,6 +111,7 @@ export default class Prizes extends Component {
           </PrizeItem>
           <PrizeComment className="item">
             <b>Veeam</b> will offer <b>500GB external Samsung SSD T5</b> for each member of team with the best project written in C#.
+            Winner — <a href="https://devpost.com/software/cyclock" target="_blank" rel="noopener noreferrer">CycLock</a>.
           </PrizeComment>
           <PrizeComment className="item">
             <b>Kiwi</b> will add <b>100 EUR flight vouchers</b> for each team member of winning team.
