@@ -114,7 +114,14 @@ export default class Prizes extends Component {
             Winner — <a href="https://devpost.com/software/cyclock" target="_blank" rel="noopener noreferrer">CycLock</a>.
           </PrizeComment>
           <PrizeComment className="item">
+            <b>Here Technologies</b> will bring Amazon Echos and secure backpacks for the best team using Here maps.
+            Winner — <a href="https://devpost.com/software/love-hate-and-prague" target="_blank" rel="noopener noreferrer">Czech Utopia Group</a>.
+          </PrizeComment>
+          <PrizeComment className="item">
             <b>Kiwi</b> will add <b>100 EUR flight vouchers</b> for each team member of winning team.
+          </PrizeComment>
+          <PrizeComment className="item">
+            <b>Reactive Conf</b> will also invite the winning team to this year's conference.
           </PrizeComment>
         </PrizesRight>
       </WrappedContainer>
