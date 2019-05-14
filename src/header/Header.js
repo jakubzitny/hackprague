@@ -244,8 +244,11 @@ export default class Header extends Component {
               <ApplyButton href="/schedule-2019.html" target="_blank" rel="noopener noreferrer">Schedule</ApplyButton>
             </ButtonWrapper>
             <ButtonWrapper>
-              <ApplyButton href="/venueplan.jpg" target="_blank" rel="noopener noreferrer">Map</ApplyButton>
+              <ApplyButton href="https://photos.app.goo.gl/8jVqkX4gFSWuRADw5" target="_blank" rel="noopener noreferrer">Photos</ApplyButton>
             </ButtonWrapper>
+            {/* <ButtonWrapper>
+              <ApplyButton href="/venueplan.jpg" target="_blank" rel="noopener noreferrer">Map</ApplyButton>
+            </ButtonWrapper> */}
             {/* <ButtonWrapper>
               <ScheduleButton href="/svenueplan.jpg" target="_blank" rel="noopener noreferrer" className="button">
                 Map
