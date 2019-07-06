@@ -118,8 +118,8 @@ const Sponsor3 = styled.a`
 const Sponsor4 = styled.a`
   display: block;
 
-  height: 129px;
-  width: 463px;
+  height: 90px;
+  width: 460px;
   background-image: url('sponsors/reactive.png');
   margin: 0 40px;
 `
