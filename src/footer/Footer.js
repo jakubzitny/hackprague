@@ -161,8 +161,8 @@ export default class Footer extends Component {
               <Links>
                 <b>Events</b>
                 {/* <a href="/">2019</a> */}
-                <a href="http://hackprague.com/hackathon2018">2018</a>
-                <a href="http://hackprague.com/hackathon2017">2017</a>
+                <a href="https://hackprague.github.io/hackprague2019/hackathon2018/">2018</a>
+                <a href="https://hackprague.github.io/hackprague2019/hackathon2017/">2017</a>
               </Links>
               <Head />
             </LogoWrapper>
