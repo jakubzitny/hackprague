@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/hackprague2019/precache-manifest.488a6e66386a72a3cecb2ec6d6badcc6.js"
+  "/hackprague2019/precache-manifest.de6fb754bf7d2754e833f8685dadbb00.js"
 );
 
 workbox.clientsClaim();
