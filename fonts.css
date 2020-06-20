@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/Futura-Bold.woff2') format('woff2'),
+        url('fonts/Futura-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/Futura-Medium.woff2') format('woff2'),
+        url('fonts/Futura-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rockwell';
+    src: url('fonts/Rockwell-Bold.woff2') format('woff2'),
+        url('fonts/Rockwell-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rockwell';
+    src: url('fonts/Rockwell-Regular.woff2') format('woff2'),
+        url('fonts/Rockwell-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

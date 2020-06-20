@@ -1,0 +1,52 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Apple Inc.//Mac OS X 10.14.1//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND:20190505T160000Z
+ORGANIZER;CN="HackPrague":MAILTO:noreply@facebookmail.com
+UID:e281459632518024@facebook.com
+DTSTAMP:20190110T150430Z
+LOCATION:CAMP - Centrum architektury a městského plánování
+PARTSTAT:ACCEPTED
+DESCRIPTION:Together\, we were able to “touch the future” last year and 
+ now that “the future is already here\, it’s up to us to distribute it eq
+ ually”.\n\nNowadays\, there’s plenty of data available about anything yo
+ u might have in mind\, be it traffic\, Earth’s surface or your own neigh
+ bourhood. Even if there’s little data available in a particular area\, t
+ he latest technologies enable us to collect and process information with
+  nearly real time speed. Although\, it is now easier than ever to collec
+ t data\, it has become increasingly challenging to analyze and use the d
+ ata meaningfully.\n\nThat's why we've decided to go with one main challe
+ nge this year: "Use available data to improve the quality of life in cit
+ ies”. \n\nCheck out the website at https://hackprague.com/hackathon2019/
+  for more info and see you in Prague on 4-5 May\, 2019! \n\nAny question
+ s? Send an email to team@hackprague.com.\n------------------------------
+ -----------------------------------\n\nCheck out photos from HackPrague 
+ 2018: goo.gl/fKRYA1\n\nWhy are we organizing this?\n-We feel that Prague
+  and the Central European region have a tremendous creative potential th
+ at hasn’t yet been realized. Our mission is to become a platform for pas
+ sionate technologists to meet\, collaborate\, and form relationships tha
+ t extend well beyond the hackathon.\n\nWhy should you come?\n- For a wee
+ kend of innovation and fun with 150 coolest technologists\n- Interaction
+  with the top European and American companies\n- Workshops and talks by 
+ experienced professionals\n- Free food and swag\n- Prize money\n\nWhat a
+ re the prizes?\nGrand prize: 50 000 CZK \n2nd place prize: 30 000 CZK\n3
+ rd place prize: 10 000 CZK\n\n… and many other sponsored prizes\n\nWho c
+ an come?\nHackPrague applications are open to all developers and designe
+ rs\, including students and full-time employees. We will select particip
+ ants based on their past projects\, experience\, and enthusiasm. We will
+  aim to admit a diverse pool of people.\n\nhttps://www.facebook.com/even
+ ts/281459632518024/
+URL;VALUE=URI:https://www.facebook.com/events/281459632518024/
+STATUS:CONFIRMED
+SEQUENCE:64034
+CLASS:PUBLIC
+SUMMARY:HackPrague 2019
+LAST-MODIFIED:20190110T150430Z
+DTSTART:20190504T070000Z
+CREATED:20190109T211716Z
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+END:VEVENT
+END:VCALENDAR

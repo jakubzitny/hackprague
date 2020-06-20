@@ -1,13 +1,13 @@
 {
-  "main.css": "/hackprague/static/css/main.2468631b.chunk.css",
-  "main.js": "/hackprague/static/js/main.296a9fda.chunk.js",
-  "main.js.map": "/hackprague/static/js/main.296a9fda.chunk.js.map",
-  "static/js/1.f2b9cdb1.chunk.js": "/hackprague/static/js/1.f2b9cdb1.chunk.js",
-  "static/js/1.f2b9cdb1.chunk.js.map": "/hackprague/static/js/1.f2b9cdb1.chunk.js.map",
-  "runtime~main.js": "/hackprague/static/js/runtime~main.3a7fe669.js",
-  "runtime~main.js.map": "/hackprague/static/js/runtime~main.3a7fe669.js.map",
-  "static/css/main.2468631b.chunk.css.map": "/hackprague/static/css/main.2468631b.chunk.css.map",
-  "index.html": "/hackprague/index.html",
-  "precache-manifest.7d5cdff2259c90a0de95bf06ab0b52cf.js": "/hackprague/precache-manifest.7d5cdff2259c90a0de95bf06ab0b52cf.js",
-  "service-worker.js": "/hackprague/service-worker.js"
+  "main.css": "/hackprague2019/static/css/main.f9e4b7eb.chunk.css",
+  "main.js": "/hackprague2019/static/js/main.a1d97834.chunk.js",
+  "main.js.map": "/hackprague2019/static/js/main.a1d97834.chunk.js.map",
+  "static/js/1.c70ddda8.chunk.js": "/hackprague2019/static/js/1.c70ddda8.chunk.js",
+  "static/js/1.c70ddda8.chunk.js.map": "/hackprague2019/static/js/1.c70ddda8.chunk.js.map",
+  "runtime~main.js": "/hackprague2019/static/js/runtime~main.a2c9edc0.js",
+  "runtime~main.js.map": "/hackprague2019/static/js/runtime~main.a2c9edc0.js.map",
+  "static/css/main.f9e4b7eb.chunk.css.map": "/hackprague2019/static/css/main.f9e4b7eb.chunk.css.map",
+  "index.html": "/hackprague2019/index.html",
+  "precache-manifest.488a6e66386a72a3cecb2ec6d6badcc6.js": "/hackprague2019/precache-manifest.488a6e66386a72a3cecb2ec6d6badcc6.js",
+  "service-worker.js": "/hackprague2019/service-worker.js"
 }
