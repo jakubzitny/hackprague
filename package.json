@@ -1,7 +1,7 @@
 {
   "name": "hackprague",
   "version": "0.1.0",
-  "homepage": "http://hackprague.com",
+  "homepage": "https://hackprague.github.io/hackprague2019/",
   "private": true,
   "dependencies": {
     "classnames": "^2.2.6",
